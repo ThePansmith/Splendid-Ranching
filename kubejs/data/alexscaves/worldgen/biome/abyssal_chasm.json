@@ -56,7 +56,14 @@
     "creature": [ ],
     "misc": [ ],
     "monster": [ ],
-    "underground_water_creature": [ ],
+    "underground_water_creature": [
+      {
+        "type": "alexscaves:hullbreaker",
+        "maxCount": 20,
+        "minCount": 5,
+        "weight": 1
+      }
+    ],
     "water_ambient": [ ],
     "water_creature": [ ],
     "alexscaves:deep_sea_creature": [ ]

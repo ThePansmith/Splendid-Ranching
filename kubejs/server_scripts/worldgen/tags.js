@@ -6,7 +6,6 @@ ServerEvents.tags('worldgen/biome', e=> {
         'splendid_ranching:magma_mounts',
         'splendid_ranching:moss_blanket',
         'splendid_ranching:opal_desert',
-        'splendid_ranching:slime_sea',
         'splendid_ranching:the_wilds'
     ])
 })
