@@ -13,15 +13,6 @@ global.showPonderLayer = (scene, speed, height, exclude) => {
     }
 };
 
-global.coinMap = [
-    { coin: "numismatics:sun", value: 4096 },
-    { coin: "numismatics:crown", value: 512 },
-    { coin: "numismatics:cog", value: 64 },
-    { coin: "numismatics:sprocket", value: 16 },
-    { coin: "numismatics:bevel", value: 8 },
-    { coin: "numismatics:spur", value: 1 },
-];
-
 global.coinObj = {
     "numismatics:sun": 4096,
     "numismatics:crown": 512,
@@ -56,6 +47,15 @@ global.formatName = (name) => {
     return name.charAt(0).toUpperCase() + name.slice(1);
 };
 
+global.coinMap = [
+    { coin: "numismatics:sun", value: 4096 },
+    { coin: "numismatics:crown", value: 512 },
+    { coin: "numismatics:cog", value: 64 },
+    { coin: "numismatics:sprocket", value: 16 },
+    { coin: "numismatics:bevel", value: 8 },
+    { coin: "numismatics:spur", value: 1 },
+];
+
 // For cases where prices are auto-generated, round
 const roundPrice = (price) => {
     for (let i = 0; i < global.coinMap.length; i++) {
@@ -72,3 +72,63 @@ const roundPrice = (price) => {
     return price;
 };
 
+global.calculateCoinValue = (coin) => {
+    let value = 0;
+    switch (coin.id.split(":")[1]) {
+        case "spur":
+            value = 1;
+            break;
+        case "bevel":
+            value = 8;
+            break;
+        case "sprocket":
+            value = 16;
+            break;
+        case "cog":
+            value = 64;
+            break;
+        case "crown":
+            value = 512;
+            break;
+        case "sun":
+            value = 4096;
+            break;
+        default:
+            console.log(`Invalid coin`);
+    }
+    return value * coin.count;
+};
+
+global.calculateCoinsFromValue = (price, output) => {
+    for (let i = 0; i < global.coinMap.length; i++) {
+        let { coin, value } = global.coinMap[i];
+        if (value <= price) {
+            if (price % value === 0) {
+                output.push({ id: coin, count: price / value });
+                return output;
+            } else {
+                output.push({ id: coin, count: Math.floor(price / value) });
+                global.calculateCoinsFromValue(price % value, output);
+            }
+            return output;
+        }
+    }
+}
+
+global.getSellCoins = (price) => {
+    let coinItems = []
+    let coinsObj = global.calculateCoinsFromValue(price, []);
+    for (let coin of coinsObj) {
+        coinItems.push(Item.of(coin.id, coin.count));
+    }
+    return coinItems
+}
+
+global.getSellPrice = (plortId, count, slimeData) => {
+    let slimeInfo = slimeData[plortId];
+    if (!slimeInfo) {
+        console.log(`No slime data for ${plortId}`);
+        return 0;
+    }
+    return slimeInfo.baseValue * slimeInfo.currentMultiplier * count;
+}

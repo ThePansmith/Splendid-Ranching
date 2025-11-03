@@ -1,8 +1,8 @@
-// priority: 0
+// priority: 999
 
 ServerEvents.loaded(e => {
     if (e.server.persistentData['slime_data'] === undefined) {
-        e.server.persistentData['slime_data'] = baseSlimeData
+        e.server.persistentData['slime_data'] = global.baseSlimeData
     }
 })
 
@@ -13,5 +13,5 @@ PlayerEvents.tick(e => {
 })
 
 ItemEvents.firstLeftClicked('minecraft:iron_sword', e => {
-    e.server.persistentData['slime_data'] = baseSlimeData
+    e.server.persistentData['slime_data'] = global.baseSlimeData
 })

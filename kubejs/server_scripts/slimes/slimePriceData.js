@@ -1,7 +1,7 @@
 // priority: 1000
 
 // object for storing slimes data
-const baseSlimeData = {
+global.baseSlimeData = {
     all_seeing: {
         baseValue: 50,
         currentMultiplier: 1,
