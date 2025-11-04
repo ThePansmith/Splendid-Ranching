@@ -1,11 +1,9 @@
 [
     {
-        "when": "onjoin",
-        "spawntype": [ "mob_summoned", "spawn_egg" ],
-        "result": "default"
-    },
-    {
-        "mob": [ "alexscaves:hullbreaker" ],
+        "mob": [
+            "alexscaves:hullbreaker",
+            "minecraft:pig", "minecraft:sheep", "minecraft:cow", "minecraft:chicken"
+        ],
         "result": "default"
     },
     {
