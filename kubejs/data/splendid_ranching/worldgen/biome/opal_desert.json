@@ -14,7 +14,7 @@
   "carvers": {},
   "features": [
     [
-      "splendid_ranching:opal_spike_placed",
+      "splendid_ranching:opal_desert/opal_spike_placed",
       "atmospheric:dune_rock",
       "atmospheric:patch_arid_sprouts"
     ]
