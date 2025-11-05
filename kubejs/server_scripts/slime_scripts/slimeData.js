@@ -2,6 +2,26 @@
 
 // object for storing slimes data
 global.baseSlimeData = {
+    // naturally spawning
+    slimy: {
+        baseValue: 1, // base value of a slimes plort
+        currentMultiplier: 1, // multiplier for a slimes plort, changes daily based on sales of plorts
+        minMultiplier: 0.5, // the lowest the multiplier can go for this slimes plort market adjustments
+        maxMultiplier: 2, // the highest the multiplier can go for this slimes plort from market adjustments
+        slimeDupeCost: 32 // how many plorts it costs to create this slimes heart in the plort press
+    },
+
+    // tier 1 breed
+
+    // tier 2 breed
+
+    // tier 3 breed
+
+    // tier 4 breed
+
+    // special
+
+    // uncategorized
     all_seeing: {
         baseValue: 50,
         currentMultiplier: 1,
@@ -102,13 +122,6 @@ global.baseSlimeData = {
     },
     shulking: {
         baseValue: 64,
-        currentMultiplier: 1,
-        minMultiplier: 0.5,
-        maxMultiplier: 2,
-        slimeDupeCost: 32
-    },
-    slimy: {
-        baseValue: 65,
         currentMultiplier: 1,
         minMultiplier: 0.5,
         maxMultiplier: 2,
