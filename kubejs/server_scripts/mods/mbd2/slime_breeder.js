@@ -4,26 +4,27 @@ const slimeRecipes = {
         // an input catalyst item that gets consumed when the recipe is ran (Optional, max 1)
         itemIn: { item: Item.of('minecraft:glowstone_dust'), chance: 0.05 },
         // an output slime entity (Optional, max 1)
-        slimeOut: { count: 1, id: 'all_seeing' },
+        entityOut: { count: 1, id: 'all_seeing', chance: 0.2 },
         // required slime entity inputs (Required > 0, recommend 2+, max 3)
-        slimeIn: [{ count: 1, id: 'slimy' }, { count: 1, id: 'bony' }, { count: 1, id: 'rotting' }],
+        entityIn: [{ count: 1, id: 'slimy' }, { count: 1, id: 'bony' }, { count: 1, id: 'rotting' }],
         // output slime hearts (Required > 0, required weight, max 3)
         heartOut: [{ count: 1, id: 'bony', weight: 6 }, { count: 1, id: 'rotting', weight: 7 }, { count: 1, id: 'all_seeing', weight: 2 }]
     },
     slimy_gold_to_luminous: {
-        slimeIn: [{ count: 1, id: 'slimy' }, { count: 1, id: 'gold' }],
+        entityIn: [{ count: 1, id: 'slimy' }, { count: 1, id: 'gold' }],
         heartOut: [{ count: 1, id: 'slimy', weight: 4 }, { count: 1, id: 'gold', weight: 5 }, { count: 1, id: 'luminous', weight: 1 }]
     }
 }
-delete slimeRecipes.placeholder // functions if you uncomment this for testing, removed for release
+// delete slimeRecipes.placeholder // functions if you comment this for testing, uncomment for release
 
 ServerEvents.recipes(e => {
     for (const [recipeName, recipeData] of Object.entries(slimeRecipes)) {
-        // real recipes that function in slime breeder machine, probably hide this category from viewer on release
+        //  - - real recipes that function in slime breeder machine - -
+        // probably hide this recipe category from recipe viewer on release, since fake recipe will be used for display
         let recipe = e.recipes.mbd2.slime_breeding()
             // real recipe entity input
             .inputEntities(
-                recipeData.slimeIn.map(input => JsonIO.of({
+                recipeData.entityIn.map(input => JsonIO.of({
                     count: input.count,
                     nbt: `{Breed:"splendid_slimes:${input.id}"}`,
                     value: { entityType: "splendid_slimes:splendid_slime" }
@@ -31,11 +32,11 @@ ServerEvents.recipes(e => {
             )
             .id(`kubejs:mbd2/slime_breeder/real/${recipeName}`)
         // real recipe entity output
-        if (recipeData.slimeOut) {
+        if (recipeData.entityOut) {
             recipe.outputEntities(
                 JsonIO.of({
-                    count: recipeData.slimeOut.count,
-                    nbt: `{Breed:"splendid_slimes:${recipeData.slimeOut.id}"}`,
+                    count: recipeData.entityOut.count,
+                    nbt: `{Breed:"splendid_slimes:${recipeData.entityOut.id}"}`,
                     value: { entityType: "splendid_slimes:splendid_slime" }
                 })
             )
@@ -45,41 +46,57 @@ ServerEvents.recipes(e => {
             if (recipeData.itemIn.chance) recipe.chance(recipeData.itemIn.chance)
             recipe.inputItems(recipeData.itemIn.item)
         }
-
-
-        // fake recipe for recipe viewer displaying nicely, doesn't function
+        // - - fake recipe for recipe viewer displaying nicely, doesn't function - -
         let fakeRecipe = e.recipes.mbd2.fake_slime_breeding()
             .id(`kubejs:mbd2/slime_breeder/fake/${recipeName}`)
             .inputEntities(
-                recipeData.slimeIn.map(input => JsonIO.of({
+                recipeData.entityIn.map(input => JsonIO.of({
                     count: input.count,
                     nbt: `{Breed:"splendid_slimes:${input.id}"}`,
                     value: { entityType: "splendid_slimes:splendid_slime" }
                 }))
             )
-        if (recipeData.slimeOut) {
+        // fake recipe entity output
+        if (recipeData.entityOut) {
+            // fake entity output display
+            if (recipeData.entityOut.chance) {
+                fakeRecipe.chance(recipeData.entityOut.chance)
+            }
             fakeRecipe.outputEntities(
                 JsonIO.of({
-                    count: recipeData.slimeOut.count,
-                    nbt: `{Breed:"splendid_slimes:${recipeData.slimeOut.id}"}`,
+                    count: recipeData.entityOut.count,
+                    nbt: `{Breed:"splendid_slimes:${recipeData.entityOut.id}"}`,
                     value: { entityType: "splendid_slimes:splendid_slime" }
                 })
             )
+            // fake entity output item display
+            fakeRecipe.uiName(`entity_item_out0`, b => b
+                .outputItems(
+                    Item.of(`splendid_slimes:slime_item`, recipeData.entityOut.count,
+                        `{slime:{id:"splendid_slimes:${recipeData.entityOut.id}"}}`).weakNBT()
+                )
+            )
+            fakeRecipe.chance(1) // reset chance for next recipe component
         }
+        // fake recipe item input
         if (recipeData.itemIn) {
-            if (recipeData.itemIn.chance) fakeRecipe.chance(recipeData.itemIn.chance)
-            fakeRecipe.uiName(`item_in0`, b => b
-                .chance(recipeData.itemIn.chance)
-                .inputItems(recipeData.itemIn.item)
+            fakeRecipe.uiName(`item_in0`, b => {
+                if (recipeData.itemIn.chance) {
+                    b.chance(recipeData.itemIn.chance)
+                } else {
+                    b.inputItems(recipeData.itemIn.item)
+                }
+                b.chance(1) // reset chance for next recipe component
+            })
+        }
+        // fake recipe slime item inputs
+        for (const entityIn of recipeData.entityIn) {
+            fakeRecipe.uiName(`entity_item_in${recipeData.entityIn.indexOf(entityIn)}`, b => b
+                .chance(1) // reset chance for next recipe component
+                .inputItems(Item.of(`splendid_slimes:slime_item`, entityIn.count, `{slime:{id:"splendid_slimes:${entityIn.id}"}}`).weakNBT())
             )
         }
-        // fake recipe slime fake item inputs
-        for (const slimeIn of recipeData.slimeIn) {
-            fakeRecipe.uiName(`entity_item_in${recipeData.slimeIn.indexOf(slimeIn)}`, b => b
-                .inputItems(Item.of(`splendid_slimes:slime_item`, slimeIn.count, `{slime:{id:"splendid_slimes:${slimeIn.id}"}}`).weakNBT())
-            )
-        }
-        // fake recipe slime heart fake item outputs
+        // fake recipe slime heart item outputs
         for (const heartOut of recipeData.heartOut) {
             let chance = heartOut.weight / recipeData.heartOut.reduce((a, b) => a + b.weight, 0)
             fakeRecipe.uiName(`fake_item_out${recipeData.heartOut.indexOf(heartOut)}`, b => b
