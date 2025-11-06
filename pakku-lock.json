@@ -83,43 +83,6 @@
             ]
         },
         {
-            "pakku_id": "t1fZvY5j4LeZsYgO",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "advanced-loot-info"
-            },
-            "name": {
-                "curseforge": "Advanced Loot Info"
-            },
-            "id": {
-                "curseforge": "1205426"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.3.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7058/809/AdvancedLootInfo-forge-1.20.1-1.3.8.jar",
-                    "id": "7058809",
-                    "parent_id": "1205426",
-                    "hashes": {
-                        "sha1": "8f01135292b0dd7716b58c5980b47752830738b1",
-                        "md5": "761aaa6c91ccfbfe3735b7fe613797f3"
-                    },
-                    "required_dependencies": [],
-                    "size": 601086,
-                    "date_published": "2025-10-02T18:23:34.887Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "hfaUxyNFXJZ4wSMM",
             "type": "MOD",
             "slug": {
@@ -1291,6 +1254,42 @@
             ]
         },
         {
+            "pakku_id": "xpSKG5AWe2huTMPh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-factory-logistics"
+            },
+            "name": {
+                "curseforge": "Create Factory Logistics"
+            },
+            "id": {
+                "curseforge": "1218807"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_factory_logistics-1.20.1-1.4.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7159/834/create_factory_logistics-1.20.1-1.4.7.jar",
+                    "id": "7159834",
+                    "parent_id": "1218807",
+                    "hashes": {
+                        "sha1": "bf67707d1645197f27cd9a4abea13159fa0fef1e",
+                        "md5": "3bd8946bc40727a019f44e1f12ccbe93"
+                    },
+                    "required_dependencies": [],
+                    "size": 1112673,
+                    "date_published": "2025-10-28T13:44:03.360Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "3RKgJKYJj0KBEOqJ",
             "pakku_links": [
                 "AXomiBVWEVmImWoO"
@@ -1333,6 +1332,45 @@
             ]
         },
         {
+            "pakku_id": "8YBHo7Y7k6uuvGdP",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-additional-logistics"
+            },
+            "name": {
+                "curseforge": "Create: Additional Logistics"
+            },
+            "id": {
+                "curseforge": "1359885"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createadditionallogistics-1.20.1-1.4.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7175/291/createadditionallogistics-1.20.1-1.4.1.jar",
+                    "id": "7175291",
+                    "parent_id": "1359885",
+                    "hashes": {
+                        "sha1": "6981845c5ca02af7aa8dc478fdf7dfa57c042100",
+                        "md5": "306411d5007a0d56c86988bff6a362df"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 958705,
+                    "date_published": "2025-11-01T20:02:50.270Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "y3iHOEvuNvZo3ZPo",
             "type": "MOD",
             "slug": {
@@ -1370,44 +1408,6 @@
                     ],
                     "size": 420049,
                     "date_published": "2024-11-09T10:55:37.607Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "TKVKwcnTQMVY7dGG",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "create-extra-gauges"
-            },
-            "name": {
-                "curseforge": "Create: Extra Gauges"
-            },
-            "id": {
-                "curseforge": "1263228"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "extra_gauges-2.0.7.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7058/464/extra_gauges-2.0.7.jar",
-                    "id": "7058464",
-                    "parent_id": "1263228",
-                    "hashes": {
-                        "sha1": "6f3331cc877bfaf15bb58723ff3129fc3207d296",
-                        "md5": "ffdf36ce4202c6136f90986e65e1b76e"
-                    },
-                    "required_dependencies": [
-                        "328085"
-                    ],
-                    "size": 1029438,
-                    "date_published": "2025-10-02T16:45:50.227Z"
                 }
             ]
         },
@@ -1676,47 +1676,6 @@
                     ],
                     "size": 94684,
                     "date_published": "2025-09-07T12:29:22.480Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "2Y4MhKHUilBqWPP8",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "difficulty-lock"
-            },
-            "name": {
-                "curseforge": "Difficulty Lock"
-            },
-            "id": {
-                "curseforge": "390886"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "difficultylock-1.20.1-4.7.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge",
-                        "forge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6186/182/difficultylock-1.20.1-4.7.jar",
-                    "id": "6186182",
-                    "parent_id": "390886",
-                    "hashes": {
-                        "sha1": "99bf8e0f4dce30384d9aa2094a750f7aadb548c3",
-                        "md5": "860c2bb5ba89137e35f8f7537c32d3ae"
-                    },
-                    "required_dependencies": [
-                        "342584"
-                    ],
-                    "size": 40530,
-                    "date_published": "2025-02-12T17:59:02.023Z"
                 }
             ]
         },
