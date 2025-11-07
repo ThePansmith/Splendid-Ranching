@@ -845,79 +845,77 @@
             ]
         },
         {
-            "pakku_id": "8SpRVMeo4YP3J2Uv",
-            "type": "MOD",
+            "pakku_id": "7qM7TQgvvspfLEvH",
+            "type": "SHADER",
             "slug": {
-                "curseforge": "collective"
+                "curseforge": "complementary-reimagined"
             },
             "name": {
-                "curseforge": "Collective"
+                "curseforge": "Complementary Shaders - Reimagined"
             },
             "id": {
-                "curseforge": "342584"
+                "curseforge": "627557"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "collective-1.20.1-8.13.jar",
+                    "file_name": "ComplementaryReimagined_r5.6.1.zip",
                     "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge",
-                        "forge",
-                        "quilt"
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7148/968/collective-1.20.1-8.13.jar",
-                    "id": "7148968",
-                    "parent_id": "342584",
+                    "url": "https://edge.forgecdn.net/files/7090/226/ComplementaryReimagined_r5.6.1.zip",
+                    "id": "7090226",
+                    "parent_id": "627557",
                     "hashes": {
-                        "sha1": "74b917dd99cd97b2f0480628a1b56958f5e0f5ad",
-                        "md5": "abe112af460bf8befe26605a5e4c4248"
+                        "sha1": "7fa0a31aa9375ad63e4b13cb1de8d4a9702dd74e",
+                        "md5": "04c822b2da584e21745869190ac653e6"
                     },
                     "required_dependencies": [],
-                    "size": 665169,
-                    "date_published": "2025-10-25T16:54:33.643Z"
+                    "size": 500696,
+                    "date_published": "2025-10-10T11:43:44.227Z"
                 }
             ]
         },
         {
-            "pakku_id": "CoWSpKQJha7XgP6u",
+            "pakku_id": "bLDwlTjItGhdP6GS",
             "type": "MOD",
             "slug": {
-                "curseforge": "comforts"
+                "curseforge": "configured"
             },
             "name": {
-                "curseforge": "Comforts"
+                "curseforge": "Configured"
             },
             "id": {
-                "curseforge": "276951"
+                "curseforge": "457570"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "comforts-forge-6.4.0+1.20.1.jar",
+                    "file_name": "configured-forge-1.20.1-2.2.3.jar",
                     "mc_versions": [
-                        "1.20.1",
-                        "1.20"
+                        "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5503/516/comforts-forge-6.4.0+1.20.1.jar",
-                    "id": "5503516",
-                    "parent_id": "276951",
+                    "url": "https://edge.forgecdn.net/files/5180/900/configured-forge-1.20.1-2.2.3.jar",
+                    "id": "5180900",
+                    "parent_id": "457570",
                     "hashes": {
-                        "sha1": "e7b9fe89566bb1ee013e33745f22f309f679536e",
-                        "md5": "a88fcc168de1a0f9b2ae4e7cbe8a8408"
+                        "sha1": "065c2d287a52f52fc8d33d780192325ee6f4b6ae",
+                        "md5": "9380dc31c599c523a5682a4025fceb92"
                     },
                     "required_dependencies": [],
-                    "size": 382083,
-                    "date_published": "2024-07-05T03:34:48.973Z"
+                    "size": 418929,
+                    "date_published": "2024-03-14T03:01:07.233Z"
                 }
             ]
         },
@@ -3650,6 +3648,44 @@
             ]
         },
         {
+            "pakku_id": "qpOR0UJfWo3zVZTW",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "oculus"
+            },
+            "name": {
+                "curseforge": "Oculus"
+            },
+            "id": {
+                "curseforge": "581495"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "oculus-mc1.20.1-1.8.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar",
+                    "id": "6020952",
+                    "parent_id": "581495",
+                    "hashes": {
+                        "sha1": "984f774e71790deaec674c7587bd24e0711871b2",
+                        "md5": "1dd891634ac21591b5a692471f112572"
+                    },
+                    "required_dependencies": [],
+                    "size": 2851119,
+                    "date_published": "2024-12-24T23:33:51.040Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "FdGN7QYItkF7RbCi",
             "type": "MOD",
             "slug": {
@@ -3687,7 +3723,44 @@
             ]
         },
         {
-            "pakku_id": "UBGl5rrPNP0oyTwb",
+            "pakku_id": "QCCaiiqQs7mUggJd",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "open-loader"
+            },
+            "name": {
+                "curseforge": "Open Loader"
+            },
+            "id": {
+                "curseforge": "354339"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "OpenLoader-Forge-1.20.1-19.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5368/592/OpenLoader-Forge-1.20.1-19.0.4.jar",
+                    "id": "5368592",
+                    "parent_id": "354339",
+                    "hashes": {
+                        "sha1": "13ee67dace2825fc593bf2bc1e44f8b4122a557d",
+                        "md5": "e1115843c44e491f45e0b6890c5776cb"
+                    },
+                    "required_dependencies": [],
+                    "size": 23938,
+                    "date_published": "2024-05-24T11:53:27.667Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "QcUI6UW5uc1I6IKB",
             "type": "MOD",
             "slug": {
                 "curseforge": "packet-fixer"
