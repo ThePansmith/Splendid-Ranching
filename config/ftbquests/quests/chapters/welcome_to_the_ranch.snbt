@@ -23,7 +23,7 @@
 				""
 				"(or, &l&9SSCCOGAC&r for short!!! &9^o^&r)"
 				""
-				"are &6&lgreatly excited&r to welcome &5you&r to your new home on &asphere&r &d&lGelatine-XB47&r!"
+				"are &6&lgreatly excited&r to welcome to your new home on &asphere&r &d&lGelatine-XB47&r!"
 				""
 				"Please tap &8[&2➡&8]&r on your &e&lHologuide&r™ to proceed through customary welcoming procedure process"
 				"{@pagebreak}"
@@ -33,7 +33,7 @@
 				"&2[ &bClass&r-&d&lS &rVariated &dGela-form&r &ahabitat&r &2]"
 				"&2[ &bClass&r-&l&21 &4Danger &rlevel &2] "
 				""
-				"&6Lucky&r &5you&r! An almost &6perfect&r &aenvironment&r with &onearly&r no danger!! &9^o^&r "
+				"&6Lucky&r you! An almost &6perfect&r &aenvironment&r with &onearly&r no danger!! &9^o^&r "
 				"&4[ Who the &lh&ke&r&l&4ll&r &4let &o&lYou&r &4get this. ] "
 				""
 				"&9&lOur&r scans show several known &dGela-form species&r from our database present on the &asphere&r, though there exists much potential for undiscovered &dGela-forms&r!"
@@ -55,7 +55,7 @@
 		{
 			dependencies: ["6B93B28705E58C2F"]
 			description: [
-				"&5Your&r &abase of operations&r &etemplate&r features:"
+				"Your &abase of operations&r &etemplate&r features:"
 				""
 				"- A &ebank deposit terminal&r allowing you to store &cGlubcoins&r, used in exchanging with the &9&lSSCCOGAC&r's for goods to assist your research, along with an &eidentification stripe&r for linking accounts. {Identification stripe can be used to link multiple players to one bank account in group play}"
 				""
@@ -89,15 +89,15 @@
 		{
 			dependencies: ["105AAC47FE089F4B"]
 			description: [
-				"&5Your&r primary assigned task is to discover and record all of the &dGela-forms&r present on the &asphere&r."
+				"Your primary assigned task is to discover and record all of the &dGela-forms&r present on the &asphere&r."
 				""
-				"&5You&r are also&6 heavily encouraged&r to crossbreed any undiscovered &dGela-forms&r you may find, and record the data of the &dproducts&r!"
+				"You are also&6 heavily encouraged&r to crossbreed any undiscovered &dGela-forms&r you may find, and record the data of the products!"
 				""
-				"A secondary task has also been given, &5you&r are required to deliver &dplort&r samples cultivated from &dslimes&r via a &esales terminal&r."
+				"A secondary task has also been given, you are required to deliver &dplort&r samples cultivated from &dslimes&r via a &esales terminal&r."
 				""
-				"In return for &dplorts&r &5you&r will be paid in &ccurrency&r to spend on selected &eequipment&r from &9&lour&r wares to assist &5you&r! ^o^"
+				"In return for &dplorts&r you will be paid in &ccurrency&r to spend on selected &eequipment&r from &9&lour&r wares to assist you! ^o^"
 				""
-				"&4[ Along with getting to keep &l&oyour&r &4generous contract. ] &r"
+				"&4[ Along with getting to keep &l&oyour&r &4generous contract. ]"
 			]
 			icon: {
 				Count: 1
@@ -114,13 +114,13 @@
 				}
 			}
 			id: "6B93B28705E58C2F"
-			min_width: 300
+			min_width: 310
 			shape: "rsquare"
 			tasks: [{
 				id: "7FC6AFD8D0D7961D"
 				type: "checkmark"
 			}]
-			title: "&5Your&r &6&lGrand&r Assignment!"
+			title: "Your &6&lGrand&r Assignment!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -250,7 +250,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Collecting Slimes"
+			title: "Collecting &dSlimes"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -263,7 +263,7 @@
 				id: "130D6E3DEAC237CF"
 				type: "checkmark"
 			}]
-			title: "Feeding Slimes"
+			title: "Feeding &dSlimes"
 			x: 2.0d
 			y: 2.0d
 		}
@@ -295,7 +295,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Cultivating Plorts"
+			title: "Cultivating &dPlorts"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -308,7 +308,7 @@
 				item: "mbd2:selling_port"
 				type: "item"
 			}]
-			title: "Selling Plorts"
+			title: "Selling &dPlorts"
 			x: -2.0d
 			y: 2.0d
 		}
@@ -322,6 +322,7 @@
 				title: "Biomes"
 				type: "checkmark"
 			}]
+			title: "&dSlime &aHabitats"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -347,6 +348,7 @@
 				item: "splendid_slimes:plort_press"
 				type: "item"
 			}]
+			title: "Slime heart formation"
 			x: -4.0d
 			y: 2.0d
 		}
@@ -359,6 +361,7 @@
 				item: "splendid_slimes:slime_incubator"
 				type: "item"
 			}]
+			title: "Growing slime hearts"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -376,6 +379,7 @@
 				title: "The Shop"
 				type: "checkmark"
 			}]
+			title: "&cShopping&r!"
 			x: -2.0d
 			y: 4.0d
 		}
@@ -388,6 +392,7 @@
 				item: "mbd2:slime_breeder"
 				type: "item"
 			}]
+			title: "Slime Fusion"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -415,6 +420,7 @@
 				title: "Happiness"
 				type: "checkmark"
 			}]
+			title: "&dSlime&r Happiness"
 			x: 4.0d
 			y: 2.0d
 		}
@@ -437,6 +443,7 @@
 				title: "Largos"
 				type: "checkmark"
 			}]
+			title: "&dLargo Slimes"
 			x: 0.0d
 			y: 4.0d
 		}
@@ -459,6 +466,7 @@
 				id: "1B51D0724E851D91"
 				type: "checkmark"
 			}]
+			title: "Tutorial Complete"
 			x: -4.0d
 			y: -2.0d
 		}
