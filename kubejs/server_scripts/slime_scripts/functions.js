@@ -1,3 +1,4 @@
+// mostly ai generated but very manually edited price adjustment slop
 function dailyRecalculatePlortValues(valueData, soldPlorts, bonus) {
     // Deep clone the input object to avoid mutations
     let newValueData = Object.assign({}, valueData);

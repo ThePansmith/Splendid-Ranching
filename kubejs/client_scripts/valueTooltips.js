@@ -10,7 +10,7 @@ ItemEvents.tooltip(e => {
         function addPercent(text, mult) {
             if (mult != 0 && mult != undefined) {
                 text.add(3, [
-                    `${mult < 0 ? '§c' : '§a'}${mult}%`
+                    `${mult < 0 ? '§c' : '§a+'}${mult}%`
                 ])
             }
         }
