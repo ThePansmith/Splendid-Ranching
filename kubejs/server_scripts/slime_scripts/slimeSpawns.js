@@ -14,6 +14,7 @@ const slimeBiomeList = {
     "alexscaves:toxic_caves": ["rocky", "monster", "orby", "dusty", "crystal", "rad"]
 }
 
+// get slime spawn event and replace them with a random breed from their biome
 EntityEvents.spawned('splendid_slimes:splendid_slime', e => {
     let biome = e.level.getBiome(e.entity.pos).unwrapKey().get().location()
     let slimeMob = e.entity
@@ -35,7 +36,13 @@ EntityEvents.spawned('splendid_slimes:splendid_slime', e => {
 
     let newSlimeNbt = {
         "Breed": `splendid_slimes:${randomType}`,
-        "Health": 100,
+        "Attributes": [
+            {
+                "Name": "minecraft:generic.max_health",
+                "Base": 20
+            }
+        ],
+        "Health": 20,
         "Happiness": 500,
         "Size": 1
     }
