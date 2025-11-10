@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "mob": "splendid_slimes:splendid_slime",
+        "persecond": 1,
+        "attempts": 50,
+        "amount": {
+            "minimum": 2,
+            "maximum": 4,
+            "groupdistance": 2
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "maxthis": 30
+        }
+    }
+]
