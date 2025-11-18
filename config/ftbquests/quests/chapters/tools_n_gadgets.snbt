@@ -274,6 +274,66 @@
 			x: 1.0d
 			y: -2.5d
 		}
+		{
+			id: "386B2017BF07EB1C"
+			tasks: [{
+				id: "157FA4B719DD5BF2"
+				item: "buildinggadgets2:gadget_building"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			id: "1AF59AE68550F0C1"
+			tasks: [{
+				id: "6AE250A796622963"
+				item: "buildinggadgets2:gadget_exchanging"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "504868731B06884F"
+			tasks: [{
+				id: "4BFB08B8DF074DE8"
+				item: {
+					Count: 1
+					id: "buildinggadgets2:gadget_cut_paste"
+					tag: {
+						pastereplace: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			id: "78C554CDA4FCD332"
+			tasks: [{
+				id: "711C7B506AFD7C68"
+				item: {
+					Count: 1
+					id: "buildinggadgets2:gadget_copy_paste"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			id: "52F77229B675C38C"
+			tasks: [{
+				id: "7D6A3E8EC7AF0CE5"
+				item: "buildinggadgets2:gadget_destruction"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
 	]
 	title: "&9 Tools n' Gadgets"
 }
