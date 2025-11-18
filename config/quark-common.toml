@@ -771,13 +771,13 @@
 	"Big Stone Clusters" = false
 	"Blossom Trees" = true
 	"Chorus Vegetation" = true
-	Corundum = true
+	Corundum = false
 	"Fairy Rings" = false
 	"Fallen Logs" = false
 	"Glimmering Weald" = false
 	"Monster Box" = false
 	"Nether Obsidian Spikes" = false
-	"New Stone Types" = true
+	"New Stone Types" = false
 	"No More Lava Pockets" = true
 	Permafrost = false
 	"Spiral Spires" = false
