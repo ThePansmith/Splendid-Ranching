@@ -1,5 +1,13 @@
 [
     {
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "spawntype": [ "mob_summoned", "spawn_egg" ],
+        "result": "default"
+    },
+    {
         "mob": "splendid_slimes:splendid_slime",
         "biome": [
             "splendid_ranching:dry_reef", "splendid_ranching:indigo_quarry", "splendid_ranching:magma_mounts",

@@ -148,7 +148,7 @@
 			description: [
 				"Your primary assigned task is to discover and record all of the &dGela-forms&r present on the &asphere&r"
 				""
-				"You are also&6 heavily encouraged&r to crossbreed any undiscovered &dGela-forms&r you may find, and record the data of the products!"
+				"You are also&6 heavily encouraged&r to perform \"Fusion Breeding\" on any undiscovered &dGela-forms&r you may find, and record the data of the products!"
 				""
 				"A secondary task has also been given, you are required to deliver &dplort&r samples cultivated from &dslimes&r via a &esales terminal&r."
 				""
@@ -321,7 +321,7 @@
 		{
 			dependencies: ["6B93B28705E58C2F"]
 			description: [
-				"Around the &asphere&r you'll find wild &dgelaforms&r roaming the surface"
+				"Around the &asphere&r you'll find wild &dGelaforms&r roaming the surface"
 				""
 				"Your &eSlime-Vac&r can be used to pull and collect the &dslimes&r by sneaking near them or by holding the trigger while on \"&d&lSlime&r\" or \"&lBoth&r\" mode"
 				""
@@ -378,9 +378,9 @@
 				""
 				"Every individual &dslime&r breed has it's own diet being &eitems&r or mobs it can eat, along with a favorite food in that diet group"
 				""
-				"you should experiment to find which the &dslimes&r favorite food is!"
+				"you should experiment to find which the &dslimes&r &efavorite food&r is!"
 				""
-				"&dSlimes&r will eat &eitems&r of it's diet found on the ground, mobs nearby, or &eitems&r placed inside of a &eslime feeder&r"
+				"&dSlimes&r will eat &eitems&r of it's diet found on the ground, mobs nearby, or &eitems&r placed inside of a &eSlime Feeder&r"
 				""
 				""
 				"When &dslimes&f are fed an &eitem&r or mob they eat, "
@@ -401,6 +401,11 @@
 			}
 			id: "24EC9B4811458C2E"
 			min_width: 350
+			rewards: [{
+				id: "3400BD81899835A5"
+				item: "numismatics:bevel"
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "How hungry."
 			tasks: [{
@@ -442,30 +447,48 @@
 			}]
 			shape: "rsquare"
 			subtitle: "ewww..."
-			tasks: [{
-				consume_items: true
-				count: 4L
-				id: "5C842B2EA6173B92"
-				item: {
-					Count: 1
-					id: "splendid_slimes:plort"
-					tag: { }
+			tasks: [
+				{
+					id: "6BAE19C516B656A5"
+					type: "checkmark"
 				}
-				match_nbt: false
-				type: "item"
-			}]
-			title: "&fCultivating &dPlorts"
+				{
+					count: 4L
+					id: "5CFB92715C6E157A"
+					item: { Count: 4, id: "splendid_slimes:plort" }
+					type: "item"
+				}
+			]
+			title: "&fCultivating &ePlorts"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["1E8294B92E62B946"]
+			description: [
+				"On the completion of your last task &9&lwe&r granted you a &eSales Terminal&r"
+				""
+				"The &eSales Terminal&r is your primary means of earning &ccurrency&r for your work"
+				""
+				"Using the machines interface you can deposit &eplorts&r into the slots and select the sell button to confirm sending them to the &l&9SSCCOGAC&r for payment in &cGlubcoins&r"
+				""
+				"The &eSales Terminal&r is patented technology, do not tamper with it to try and understand the inner workings, or your contract and stay on &d&lGelatine-XB47&r will be &4voided&r &9^o^"
+			]
 			icon: "mbd2:selling_port"
 			id: "3A30D0E70BEA4946"
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "25E0880387928BEF"
+				item: "splendid_slimes:corral_block"
+				type: "item"
+			}]
 			shape: "rsquare"
+			subtitle: "Cha-ching!"
 			tasks: [
 				{
 					id: "157C41866305863C"
+					title: "Sales Time!"
 					type: "checkmark"
 				}
 				{
@@ -475,18 +498,39 @@
 					type: "item"
 				}
 			]
-			title: "&fSelling &dPlorts"
+			title: "&fSelling &ePlorts"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["605E7F63ACF29D56"]
+			description: [
+				"This machine is the &ePlort Rippit&r. It is used to extract many &eresources&r from &eplorts&r!"
+				""
+				"Every &dslime&r breeds &eplort&r has different resources it can produce"
+				""
+				"Some &eplorts&r have one item that can be extracted, some have several more! "
+				""
+				"There can be 9 different possible outputs at most but you will always receive &o&njust one&r of the outputs"
+				""
+				"The item you extract from the &eplort&r using the &eRippit&r is random, some items output more frequently than others"
+				""
+				"The chance of each output is listed in your Recipe Guide"
+			]
+			icon: "splendid_slimes:plort_rippit"
 			id: "01150FF03DEBB716"
-			shape: "hexagon"
-			tasks: [{
-				id: "16E1630DD18F33D9"
-				item: "splendid_slimes:plort_rippit"
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "02C2C8B5ED22AD03"
+				item: "minecraft:iron_ingot"
 				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Welcome back frogport"
+			tasks: [{
+				id: "6541908E77ABDAD1"
+				type: "checkmark"
 			}]
 			title: "Resource Harvesting"
 			x: -3.5d
@@ -497,12 +541,28 @@
 			description: [
 				"The &ePlort Press&r is a machine used to create &eSlime Hearts&r"
 				""
-				"Most &dslimes&r can use the &ePlort Press&r to form a new "
-				"&eSlime Heart&r using a number of the &dslime&r breeds &eplorts&r "
+				"Most breeds of &dslime&r can use a number of their &eplort&r placed in the &ePlort Press&r to compress them into a whole new &eSlime Heart&r, which can be incubated into a new &dslime&r with an &eIncubator&r"
 			]
 			icon: "splendid_slimes:plort_press"
 			id: "605E7F63ACF29D56"
 			min_width: 300
+			rewards: [
+				{
+					id: "6E9072943B68A316"
+					item: "mbd2:slime_breeder"
+					type: "item"
+				}
+				{
+					id: "589C3308399E641D"
+					item: "splendid_slimes:slime_incubator"
+					type: "item"
+				}
+				{
+					id: "200E4AD913A7D5DF"
+					item: "splendid_slimes:plort_rippit"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			tasks: [{
 				id: "7AA1ED39BBD0C2EB"
@@ -514,42 +574,97 @@
 		}
 		{
 			dependencies: ["605E7F63ACF29D56"]
+			description: [
+				"&eSlime Hearts&r obtained from the &ePlort Press&r or &eFusion Breeder&r can be placed inside of an incubator to be slowly grown into a whole new &dslime&r!"
+				""
+				"After a while the newly grown &dslime&r is ejected from the back of the &eIncubator&r"
+				""
+				"The newly grown &dslime&r will start as a \"wild &dslime&r\" with Neutral happiness"
+			]
+			icon: "splendid_slimes:slime_incubator"
 			id: "56F49C5A7B13623E"
-			shape: "hexagon"
-			tasks: [{
-				id: "6AA11F7EC4B8C775"
-				item: "splendid_slimes:slime_incubator"
+			min_width: 300
+			rewards: [{
+				id: "71125748BA3F1B9D"
+				item: {
+					Count: 1
+					id: "splendid_slimes:slime_heart"
+					tag: {
+						slime: {
+							id: "splendid_slimes:tree"
+						}
+					}
+				}
 				type: "item"
 			}]
-			title: "Growing slime hearts"
+			shape: "hexagon"
+			subtitle: "It's aliiiiive!"
+			tasks: [{
+				id: "6F21C73EDC043EC4"
+				type: "checkmark"
+			}]
+			title: "&fGrowing &eSlime Hearts"
 			x: -4.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["3A30D0E70BEA4946"]
-			description: [""]
+			description: [
+				"Our &cSplendid Wares Shop&r provides ranchers (thats you!) many utilities"
+				""
+				"Allowing you to &cpurchase&r more of our own &9&lSSCCOGAC&r Technology!"
+				""
+				"&nIncluding but not limited to:&r"
+				""
+				"- Sales related machines and tools"
+				"- &dSlime&r related cultivation and processing machines"
+				"- Electrical wiring equipment"
+				"- Portable storage"
+				"- Area clearing gadgetry"
+			]
 			hide_dependent_lines: true
 			icon: "numismatics:creative_vendor"
 			id: "2FDFFE3208FF3C16"
+			min_width: 300
+			rewards: [{
+				id: "34C937A0301A594C"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
 			shape: "hexagon"
-			subtitle: "I love capitalism!"
+			subtitle: "Shopping!"
 			tasks: [{
 				id: "52D66243AA5C9C74"
 				title: "I LOVE CAPITALISM !!!"
 				type: "checkmark"
 			}]
-			title: "&cShopping&r!"
+			title: "&aSplendid Wares"
 			x: -2.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["605E7F63ACF29D56"]
+			description: [
+				"The &eSlime Fusion Breeder&r while not capable of much on it's own, it is arguably the ranchers &6most important&r machine"
+				""
+				"Fusion Breeding is the process of merging multiple &dslimes&r in an area, giving a chance to create entirely new &dslimes&r that are &6essential&r to improving your home base and equipment"
+				""
+				"The &eFusion Breeder&r intakes &dslimes&r in an area behind it to perform fusions, some &dslimes&r may require certain &ecatalyst input items&r using the machines interface"
+				""
+				"Fusion breeding outputs &none single &eslime heart&r! The chances displayed in the recipe guide are weights"
+				""
+				"The resulting &eslime heart&r could be from an input &eslime&r or if you're lucky, the &eheart&r for an &d&nentirely new slime&r breed!"
+				""
+				"You can view how to fuse specific &dslimes&r by checking recipes for their &eslime item&r or &eslime heart&r using your recipe guide"
+			]
+			icon: "mbd2:slime_breeder"
 			id: "75A4584FAAEC2937"
+			min_width: 350
 			shape: "rsquare"
+			subtitle: "Almost as good as farm merge valley"
 			tasks: [{
-				id: "48B046D35A67870C"
-				item: "mbd2:slime_breeder"
-				type: "item"
+				id: "4245A99826CB46C0"
+				type: "checkmark"
 			}]
 			title: "&dSlime&f Fusion Breeding"
 			x: -4.0d
@@ -581,9 +696,51 @@
 		}
 		{
 			dependencies: ["24EC9B4811458C2E"]
+			description: [
+				"When a &dslime&r is first found it'll typically have the \"Neutral\" state, this is the &dslimes current happiness"
+				""
+				"You can view the current happiness state by looking at the &dslime&r close up"
+				""
+				"Both wild and fed &dslimes&r have happiness, but you can only see the state of one that has been fed before"
+				""
+				"&a&l&n^ Increasing"
+				"- &dSlimes&r have their happiness increased when fed"
+				"- Eating it's &efavorite food&r will increase by double the amount"
+				"- When eating near at least 3 &dslimes&r of the same breed, it will gain more happiness, and even more so when near 6-7 &dslimes"
+				"- Eating a &eSlime Candy&r will increase a &dslimes&r happiness state instantly"
+				""
+				"&c&l&nV Decreasing"
+				"- When not fed for a while a &dslime&r will begin starving and happiness will gradually decrease"
+				"- When killed and reduced to a lower size, a &dslimes&r happiness greatly decreases"
+				"- If fed and near 9 or more &dslimes&r of the same breed, happiness will also greatly decrease"
+				""
+				"&l&nVery important info on &dslime&f happiness states:&r &8[&a➡&8]&r"
+				"{@pagebreak}"
+				"&dSlimes&r have 4 different happiness states: &aHappy&r, &7Neutral&r, &9Sad&r, and &cFurious&r. Each state will cause or limit certain behaviors."
+				""
+				"&a&l&nHappy"
+				"Happy &dslimes&r will perform their specified positive behaviors if they exist! The more happy a &dslime&r is, the more it will perform it's positive effects."
+				""
+				"&7&l&nNeutral"
+				"The basic happiness state of a &dslime&r. It won't perform any negative behaviors, but it won't perform any positive ones either. Incubated &dslimes&r are born in this state!"
+				""
+				"&9&l&nSad"
+				"Sad &dslimes&r will still produce Plorts, but they won't be happy about it. They'll perform negative behaviors more and more as their happiness decreases."
+				""
+				"&c&l&nFurious"
+				"At extremely low levels of happiness, &dslimes&r will attack the player. They will frequently perform negative behaviors, won't produce Plorts, and won't turn into &dLargo slimes&r."
+			]
 			icon: "numismatics:sun"
 			id: "6352FC5322CFD542"
+			min_width: 350
+			rewards: [{
+				count: 5
+				id: "591872EA475BF1F9"
+				item: "splendid_slimes:slime_candy"
+				type: "item"
+			}]
 			shape: "hexagon"
+			subtitle: "You're not you when you're hungry"
 			tasks: [{
 				id: "44FD8F44041E06A3"
 				title: "Happiness"
@@ -595,18 +752,46 @@
 		}
 		{
 			dependencies: ["1E8294B92E62B946"]
+			description: [
+				"Feeding a non-furious &dslime&r another &dslimes&r &eplort&r will create a &dLargo Slime&r!"
+				""
+				"These &dslimes&r become a combination of both the original &dslime&r, and the &dslime&r breed of the &eplort&r eaten"
+				""
+				"&dLargo slimes&r output a &eplort&r for each of the breeds and even share a diet, though &dslimes&r with the dominant or recessive traits can change the diet outcome for &dLargo Slimes&r"
+				""
+				"The new &dLargo Slime&r will use the base of the original &dslime&r, and the hat of the breed from the &eplort&r eaten"
+				""
+				"Feeding a largo &dslime&r a 3rd type of &eplort&r can cause... &4Bad things&r! Don't do that. &9^v^&r"
+				""
+				"Also note you cannot pick up &dLargo Slimes&r using your &eSlime-Vac&r, it will just pull them around"
+			]
 			icon: {
 				Count: 1
 				id: "splendid_slimes:slime_item"
 				tag: {
 					slime: {
-						id: "splendid_slimes:gem"
+						id: "splendid_slimes:gold"
 					}
 				}
 			}
 			icon_scale: 1.2d
 			id: "41CE67FFD8A648DC"
+			min_width: 350
+			rewards: [{
+				id: "610E0D61429AE2B4"
+				item: {
+					Count: 1
+					id: "splendid_slimes:plort"
+					tag: {
+						plort: {
+							id: "splendid_slimes:monster"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
+			subtitle: "Not to be confused with fusion"
 			tasks: [{
 				id: "5962EBF3AE58852F"
 				title: "Largos"
@@ -620,6 +805,11 @@
 			dependencies: ["605E7F63ACF29D56"]
 			icon: "supplementaries:cog_block"
 			id: "611599F122718E16"
+			rewards: [{
+				id: "6FA65020D9262911"
+				title: "replace me with an akhasic tome"
+				type: "custom"
+			}]
 			shape: "rsquare"
 			subtitle: "This pack has more than slimes??"
 			tasks: [{
@@ -656,6 +846,7 @@
 			id: "0532AC1F6E4E760D"
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "Path of the botanist"
 			tasks: [{
 				id: "129E4003BAD1A743"
 				title: "The nature of the druids suits me"
@@ -671,6 +862,7 @@
 			id: "0DA69A84028E2CD4"
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "Path of the mechanist"
 			tasks: [{
 				id: "7ABC9EB5BCA6C006"
 				title: "The path of mechanical machinations is the way!"
@@ -691,6 +883,7 @@
 			id: "7847FF4866410017"
 			shape: "diamond"
 			size: 1.25d
+			subtitle: "Path of the scientist"
 			tasks: [{
 				id: "109898E1B0AB47CF"
 				title: "I am a computer scientist!"
@@ -702,6 +895,17 @@
 		}
 		{
 			dependencies: ["3A30D0E70BEA4946"]
+			description: [
+				"The rate at which you sell &eplorts&r for through a &eSales Terminal&r is not static, in fact it is greatly ever-changing!"
+				""
+				"Every day early in the morning, the whole &cmarket&r and each individual &eplorts&r values will &cfluctuate&r, and you will be alerted on the updates"
+				""
+				"Selling a &eplort&r will cause the &dslime&r breeds &eplort&r &cmarket price&r to drop based on however much you sold on the next day, prices will not change mid day"
+				""
+				"On top of that there can be &eplorts&r in &6high demand&r, having a &6hugely&r inflated &csell price&r for the day!"
+				""
+				"Due to all these &cfluctuations&r it may be a good idea to hold onto your &eplorts&r until there is a good day to sell them, or wait for their price to recover after selling plenty"
+			]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -710,14 +914,19 @@
 				}
 			}
 			id: "40C6C595C39C2067"
+			min_width: 300
+			rewards: [{
+				id: "2EF9BE31ABFA3CC8"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
 			shape: "hexagon"
-			subtitle: "Let's go gambling!"
 			tasks: [{
 				id: "592DB0227656D80C"
-				title: "The Plort Market"
+				title: "Let's go gambling!"
 				type: "checkmark"
 			}]
-			title: "&fThe &dPlort &cMarket"
+			title: "&fThe &cPlort Market"
 			x: -1.5d
 			y: 4.0d
 		}
@@ -741,6 +950,12 @@
 			icon: "splendid_slimes:corral_block"
 			id: "7AA6A101567ED2C6"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "7999AEE106A9E844"
+				item: "splendid_slimes:corral_block"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "Pondering my specimens"
 			tasks: [{
@@ -757,6 +972,11 @@
 			hide_dependent_lines: true
 			icon: "botania:light_relay"
 			id: "528ED809C83D224D"
+			rewards: [{
+				id: "1B9AFAD84BC7F42A"
+				item: "numismatics:bevel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "Eureka!"
 			tasks: [{
@@ -766,6 +986,17 @@
 			}]
 			title: "&b The Lab"
 			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["24EC9B4811458C2E"]
+			id: "015AC5B2CFF2FAAE"
+			tasks: [{
+				id: "248D796BE455F1E0"
+				title: "animals"
+				type: "checkmark"
+			}]
+			x: 2.0d
 			y: 4.0d
 		}
 	]

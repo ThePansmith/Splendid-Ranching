@@ -1,3 +1,27 @@
+ServerEvents.recipes(e => {
+    // auto generated plort selling fake recipes
+    for (let [slimeType, _] of Object.entries(global.slimeDefinitionsData)) {
+        let valueData = global.baseSlimeValueData[slimeType]
+        let disabled = global.disabledSlimes.includes(slimeType)
+
+        if (valueData && disabled) { // skip and log if slimes disabled but has value data
+            console.warn(`"${slimeType}" slime is disabled but has value data!`)
+            continue
+        }
+        if (disabled) continue // skip disabled slimes
+        if (valueData === undefined) { // skip and log if no value data
+            console.warn(`no slime value data for - "${slimeType}"`)
+            continue
+        }
+
+        // these recipes don't function they're just there to display selling in recipe viewer
+        e.recipes.mbd2.plort_selling()
+            .inputItems(
+                Item.of(`splendid_slimes:plort`, `{plort:{id:"splendid_slimes:${slimeType}"}}`).weakNBT()
+            )
+    }
+})
+
 MBDMachineEvents.onTick("mbd2:selling_port", e => {
     const mbdEvent = e.event
     const { machine } = mbdEvent
@@ -66,16 +90,18 @@ MBDMachineEvents.onUI("mbd2:selling_port", e => {
 
         let sellPrice = machine.customData.getInt("sell_price") // get sell price from machine data
         let coinItems = global.getSellCoins(sellPrice) // get coin items from sell price
+        machine.level.playSound(null, machine.pos.x, machine.pos.y, machine.pos.z, "create:stock_ticker_trade", "blocks", 1, 1)
 
         // iterate through coin items and pop them out of the machines top face
-        for (let i = 0; i < coinItems.length; i++) {
-            machine.level.getBlock(machine.pos).popItemFromFace(coinItems[i], "up")
-            let a = i
-            Utils.server.scheduleInTicks(10000 * a, () => {
+
+        machine.level.server.scheduleInTicks(10, () => {
+            for (let i = 0; i < coinItems.length; i++) {
+                machine.level.getBlock(machine.pos).popItemFromFace(coinItems[i], "up")
+                let a = i
                 let block = machine.level.getBlock(machine.pos)
                 block.popItemFromFace(coinItems[i], "up")
-            })
-        }
+            }
+        })
 
         let dailySoldObj = machine.level.server.persistentData['daily_sold_plorts'] // get the daily sold plorts server data
         // add sold plorts to the daily sold plorts server data

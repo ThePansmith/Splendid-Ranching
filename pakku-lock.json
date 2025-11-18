@@ -49,6 +49,43 @@
             ]
         },
         {
+            "pakku_id": "alnTeOIfdOVWsguh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "advanced-loot-info"
+            },
+            "name": {
+                "curseforge": "Advanced Loot Info"
+            },
+            "id": {
+                "curseforge": "1205426"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.5.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7230/401/AdvancedLootInfo-forge-1.20.1-1.5.2.jar",
+                    "id": "7230401",
+                    "parent_id": "1205426",
+                    "hashes": {
+                        "sha1": "2fb8ada5a80d171c166853c3e352900c03f68498",
+                        "md5": "d354d9a0f21ad9c9c6994c651c4354ef"
+                    },
+                    "required_dependencies": [],
+                    "size": 653647,
+                    "date_published": "2025-11-16T21:01:51.277Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ltbWhN3eAyRQmUEU",
             "type": "MOD",
             "slug": {
@@ -1276,7 +1313,7 @@
             ]
         },
         {
-            "pakku_id": "0z2FfCfmqBEjbbRM",
+            "pakku_id": "tse5lCpgpmUTYpdb",
             "type": "MOD",
             "slug": {
                 "curseforge": "crash-assistant"
@@ -1290,7 +1327,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.20.jar",
+                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.21.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -1300,16 +1337,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7215/808/CrashAssistant-forge-1.19-1.20.1-1.10.20.jar",
-                    "id": "7215808",
+                    "url": "https://edge.forgecdn.net/files/7234/765/CrashAssistant-forge-1.19-1.20.1-1.10.21.jar",
+                    "id": "7234765",
                     "parent_id": "1154099",
                     "hashes": {
-                        "sha1": "95863fe5716a373df7fbaa6ad205ba6ca8161f53",
-                        "md5": "11dd9cf78ad59c7d4ac3e60879ab30a0"
+                        "sha1": "66d052ebca88a6e4bcd4bfba3509d7951f6a4920",
+                        "md5": "05e11a33982201585d710f42da7a13a4"
                     },
                     "required_dependencies": [],
-                    "size": 1039881,
-                    "date_published": "2025-11-12T22:39:51.697Z"
+                    "size": 1074081,
+                    "date_published": "2025-11-18T05:48:07.630Z"
                 }
             ]
         },
@@ -4979,7 +5016,7 @@
             ]
         },
         {
-            "pakku_id": "nWhHrA7YZZDWH7vF",
+            "pakku_id": "8qLokQNLAVnBeKfE",
             "type": "MOD",
             "slug": {
                 "curseforge": "splendid-slimes"
@@ -4993,7 +5030,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.14.4.jar",
+                    "file_name": "splendid_slimes-0.15.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5001,18 +5038,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6913/446/splendid_slimes-0.14.4.jar",
-                    "id": "6913446",
+                    "url": "https://edge.forgecdn.net/files/7234/503/splendid_slimes-0.15.0.jar",
+                    "id": "7234503",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "81cdd2a411efb879dcd160dd83007dd008db974e",
-                        "md5": "c114be4687320094cfa5033b4ae79f33"
+                        "sha1": "6cc05de6df42361d2e8e9fe9a006bce09c03d45d",
+                        "md5": "24eeaf409d419dea1276b5066e18130c"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 462002,
-                    "date_published": "2025-08-22T01:41:44.450Z"
+                    "size": 465869,
+                    "date_published": "2025-11-18T03:21:50.763Z"
                 }
             ]
         },
