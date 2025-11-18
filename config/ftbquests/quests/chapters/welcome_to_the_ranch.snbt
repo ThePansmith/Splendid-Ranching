@@ -467,7 +467,7 @@
 				""
 				"Using the machines interface you can deposit &eplorts&r into the slots and select the sell button to confirm sending them to the &l&9SSCCOGAC&r for payment in &cGlubcoins&r"
 				""
-				"The &eSales Terminal&r is patented technology, do not tamper with it to try and understand the inner workings or your contract and stay on &d&lGelatine-XB47&r will be &4void&r &9^o^"
+				"The &eSales Terminal&r is patented technology, do not tamper with it to try and understand the inner workings, or your contract and stay on &d&lGelatine-XB47&r will be &4voided&r &9^o^"
 			]
 			icon: "mbd2:selling_port"
 			id: "3A30D0E70BEA4946"
@@ -498,7 +498,9 @@
 				""
 				"Every &dslime&r breeds &eplort&r has different resources it can produce"
 				""
-				"Some &eplorts&r have one item that can be extracted, some have several more! There can be 9 different possible outputs at most but you will always receive &o&njust one&r of the outputs"
+				"Some &eplorts&r have one item that can be extracted, some have several more! "
+				""
+				"There can be 9 different possible outputs at most but you will always receive &o&njust one&r of the outputs"
 				""
 				"The item you extract from the &eplort&r using the &eRippit&r is random, some items output more frequently than others"
 				""
@@ -588,8 +590,23 @@
 		}
 		{
 			dependencies: ["605E7F63ACF29D56"]
+			description: [
+				"The &eSlime Fusion Breeder&r while not capable of much on it's own, it is arguably the ranchers &6most important&r machine"
+				""
+				"Fusion Breeding is the process of merging multiple &dslimes&r in an area, giving a chance to create entirely new &dslimes&r that are &6essential&r to improving your home base and equipment"
+				""
+				"The &eFusion Breeder&r intakes &dslimes&r in an area behind it to perform fusions, some &dslimes&r may require certain &ecatalyst input items&r using the machines interface"
+				""
+				"Fusion breeding outputs &none single &eslime heart&r, the chances displayed in the recipe guide are weights."
+				""
+				"The resulting &eslime heart&r could be from an input &eslime&r or if you're lucky, the &eheart&r for an &d&nentirely new slime&r breed!"
+				""
+				"You can view how to fuse specific &dslimes&r by checking recipes for their &eslime item&r or &eslime heart&r using your recipe guide"
+			]
 			id: "75A4584FAAEC2937"
+			min_width: 350
 			shape: "rsquare"
+			subtitle: "Almost as good as farm merge valley"
 			tasks: [{
 				id: "48B046D35A67870C"
 				item: "mbd2:slime_breeder"
