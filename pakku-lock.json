@@ -4034,6 +4034,78 @@
             ]
         },
         {
+            "pakku_id": "FmOAmZ1QWGKpFkVh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "natures-compass"
+            },
+            "name": {
+                "curseforge": "Nature's Compass"
+            },
+            "id": {
+                "curseforge": "252848"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "NaturesCompass-1.20.1-1.11.2-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4712/189/NaturesCompass-1.20.1-1.11.2-forge.jar",
+                    "id": "4712189",
+                    "parent_id": "252848",
+                    "hashes": {
+                        "sha1": "31ae930cdbb34e8e05e1954cfb2fee3a3813e850",
+                        "md5": "7c05072645b1aae529b1e38c74b87c4c"
+                    },
+                    "required_dependencies": [],
+                    "size": 215119,
+                    "date_published": "2023-08-19T13:57:24.937Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "57EC0mYv4CXcsrc6",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "nonetherportal"
+            },
+            "name": {
+                "curseforge": "No Nether Portal"
+            },
+            "id": {
+                "curseforge": "628663"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "nonetherportal-1.20.1-1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4654/671/nonetherportal-1.20.1-1.0.jar",
+                    "id": "4654671",
+                    "parent_id": "628663",
+                    "hashes": {
+                        "sha1": "772155ead7f8aab06a3404c31377f26e3867f1f3",
+                        "md5": "9122c5e1e58e4ff6c448610b9a19380c"
+                    },
+                    "required_dependencies": [],
+                    "size": 3066,
+                    "date_published": "2023-07-20T09:21:57.737Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "RdZJQVLLbKFBn6bW",
             "type": "MOD",
             "slug": {
@@ -4668,44 +4740,6 @@
                     "required_dependencies": [],
                     "size": 136923,
                     "date_published": "2025-02-24T20:12:14.590Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "MRMNhWnnBoJABs0b",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "restricted-portals"
-            },
-            "name": {
-                "curseforge": "Restricted Portals"
-            },
-            "id": {
-                "curseforge": "228266"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "restrictedportals-forge-1.20.1-1.5.0.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4662/164/restrictedportals-forge-1.20.1-1.5.0.jar",
-                    "id": "4662164",
-                    "parent_id": "228266",
-                    "hashes": {
-                        "sha1": "602bb68a7613bf8e1f4da62d5b601ca83b1cebb8",
-                        "md5": "672015d3111c06f68749126d82d94b5e"
-                    },
-                    "required_dependencies": [],
-                    "size": 57684,
-                    "date_published": "2023-07-24T16:46:21.357Z"
                 }
             ]
         },
