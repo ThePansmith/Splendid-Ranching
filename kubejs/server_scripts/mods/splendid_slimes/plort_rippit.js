@@ -66,12 +66,193 @@ const rippitOutputs = {
         { item: "minecraft:chorus_fruit", count: 8, weight: 45 },
         { item: "minecraft:end_stone", count: 16, weight: 45 },
     ],
+    // t0 caves
+    candy: [
+        { item: 'alexscaves:sharpened_candy_cane', count: 1, weight: 20 },
+        { item: 'alexscaves:candy_cane', count: 4, weight: 40 },
+        { item: 'alexscaves:gumball_pile', count: 3, weight: 40 }
+    ],
+    abyssal: [
+        { item: 'alexscaves:ortholance', count: 1, weight: 30 },
+        { item: 'alexscaves:bioluminesscence', count: 6, weight: 30 },
+        { item: 'alexscaves:immortal_embryo', count: 1, weight: 10 },
+        { item: 'alexscaves:depth_charge', count: 4, weight: 30 }
+    ],
+    rad: [
+        { item: 'alexscaves:uranium_shard', count: 4, weight: 100 }
+    ],
+    forlorn: [
+        { item: 'alexscaves:moth_dust', count: 4, weight: 35 },
+        { item: 'alexscaves:dark_tatters', count: 4, weight: 35 },
+        { item: 'alexscaves:occult_gem', count: 1, weight: 30 }
+    ],
+    jurassic: [
+        { item: 'alexscaves:heavy_bone', count: 4, weight: 30 },
+        { item: 'alexscaves:tough_hide', count: 4, weight: 40 },
+        { item: 'alexscaves:dinosaur_chop', count: 4, weight: 30 }
+    ],
+    neodymium: [
+        { item: 'alexscaves:raw_scarlet_neodymium', count: 4, weight: 35 },
+        { item: 'alexscaves:raw_azure_neodymium', count: 4, weight: 35 },
+        { item: 'alexscaves:ferrouslime_ball', count: 4, weight: 30 }
+    ],
     // t1
+    bony: [
+        { item: 'minecraft:bone', count: 8, weight: 40 },
+        { item: 'minecraft:bone_block', count: 4, weight: 20 },
+        { item: 'alexscaves:heavy_bone', count: 4, weight: 10 },
+        { item: 'galosphere:silver_ingot', count: 4, weight: 30 }
+    ],
+    rotting: [
+        { item: 'minecraft:rotten_flesh', count: 8, weight: 60 },
+        { item: 'minecraft:iron_ingot', count: 6, weight: 40 }
+    ],
+    all_seeing: [
+        { item: 'minecraft:spider_eye', count: 4, weight: 30 },
+        { item: 'minecraft:string', count: 6, weight: 40 },
+        { item: 'minecraft:copper_ingot', count: 6, weight: 30 }
+    ],
+    blazing: [
+        { item: 'minecraft:blaze_rod', count: 4, weight: 20 },
+        { item: 'minecraft:quartz', count: 6, weight: 30 },
+        { item: 'minecraft:soul_sand', count: 4, weight: 30 },
+        { item: 'minecraft:gold_ingot', count: 6, weight: 20 }
+    ],
+    prisma: [
+        { item: 'minecraft:prismarine_shard', count: 4, weight: 30 },
+        { item: 'minecraft:prismarine_crystals', count: 4, weight: 30 },
+        { item: 'minecraft:pufferfish', count: 3, weight: 20 },
+        { item: 'minecraft:sponge', count: 4, weight: 10 },
+        { item: 'minecraft:trident', count: 1, weight: 10 }
+    ],
+    bitwise: [
+        { item: 'minecraft:redstone', count: 6, weight: 50 },
+        { item: 'minecraft:copper_ingot', count: 6, weight: 50 }
+    ],
+    boomcat: [
+        { item: 'minecraft:gunpowder', count: 4, weight: 50 },
+        { item: 'create:zinc_ingot', count: 6, weight: 50 }
+    ],
+    fungus: [
+        { item: 'minecraft:brown_mushroom_block', count: 4, weight: 30 },
+        { item: 'minecraft:red_mushroom_block', count: 4, weight: 30 },
+        { item: 'minecraft:mycelium', count: 4, weight: 10 },
+        { item: 'minecraft:nether_wart', count: 4, weight: 40 }
+    ],
+    ocean: [
+        { item: 'minecraft:kelp', count: 4, weight: 30 },
+        { item: 'minecraft:ink_sac', count: 4, weight: 30 },
+        { item: 'minecraft:heart_of_the_sea', count: 1, weight: 10 },
+        { item: 'minecraft:trident', count: 1, weight: 10 },
+        { item: 'minecraft:diamond', count: 6, weight: 10 }
+    ],
+    stony: [
+        { item: 'minecraft:andesite', count: 4, weight: 30 },
+        { item: 'minecraft:diorite', count: 4, weight: 30 },
+        { item: 'minecraft:granite', count: 4, weight: 30 },
+        { item: 'minecraft:iron_ingot', count: 6, weight: 10 }
+    ],
+    tree: [
+        { item: 'minecraft:oak_log', count: 8, weight: 20 },
+        { item: 'minecraft:spruce_log', count: 8, weight: 20 },
+        { item: 'minecraft:birch_log', count: 8, weight: 15 },
+        { item: 'minecraft:jungle_log', count: 8, weight: 15 },
+        { item: 'minecraft:acacia_log', count: 8, weight: 15 },
+        { item: 'minecraft:dark_oak_log', count: 8, weight: 15 }
+    ],
+    phantom: [
+        { item: 'minecraft:phantom_membrane', count: 4, weight: 60 },
+        { item: 'minecraft:phantom_membrane', count: 4, weight: 10 },
+        { item: 'create:zinc_ingot', count: 4, weight: 30 }
+    ],
 
     // t2
+    ender: [
+
+    ],
+    luminous: [
+
+    ],
+    magma: [
+
+    ],
+    charred: [
+
+    ],
+    weeping: [
+
+    ],
+    crimson: [
+
+    ],
+    warped: [
+
+    ],
+    geode: [
+
+    ],
+    gem: [
+
+    ],
+    dark: [
+
+    ],
+    sculk: [
+
+    ],
+    magnetic: [
+
+    ],
 
     // t3
+    shulking: [
 
+    ],
+    metallic: [
+
+    ],
+    minty: [
+
+    ],
+    jewel: [
+
+    ],
+    infernal: [
+
+    ],
+    mechanical: [
+
+    ],
+    tendril: [
+
+    ],
+    radiant: [
+
+    ],
+    
+    // t4
+    gold: [
+
+    ],
+    forge: [
+
+    ],
+    time: [
+
+    ],
+    
+    // t5
+    quantum: [
+
+    ],
+    nuclear: [
+
+    ],
+    
+    // other
+    burger: [
+
+    ]
 }
 
 ServerEvents.recipes(e => {
