@@ -263,7 +263,7 @@ ServerEvents.recipes(e => {
         let recipeData = rippitOutputs[slimeType]
         // skip and log if slime type has no recipe data
         // not all slimes *need* the data this is just for noting
-        if (recipeData === undefined) {
+        if (recipeData === undefined || recipeData.length === 0) {
             console.warn(`no rippit data for - "${slimeType}"`)
             continue
         }
