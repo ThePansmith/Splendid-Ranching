@@ -3,6 +3,10 @@ ServerEvents.tags('item', e => {
     e.add('itemfilters:check_nbt', [
         'splendid_slimes:plort', 'splendid_slimes:slime_heart', 'splendid_slimes:slime_item'
     ])
+    e.add('quark:stone_tool_materials', ['botania:metamorphic_forest_cobblestone', 'botania:metamorphic_plains_cobblestone', 'botania:metamorphic_fungal_cobblestone', 'botania:metamorphic_mountain_cobblestone', 'botania:metamorphic_swamp_cobblestone', 'botania:metamorphic_desert_cobblestone', 'botania:metamorphic_taiga_cobblestone', 'botania:metamorphic_mesa_cobblestone'])
+    e.add('minecraft:stone_tool_materials', ['botania:metamorphic_forest_cobblestone', 'botania:metamorphic_plains_cobblestone', 'botania:metamorphic_fungal_cobblestone', 'botania:metamorphic_mountain_cobblestone', 'botania:metamorphic_swamp_cobblestone', 'botania:metamorphic_desert_cobblestone', 'botania:metamorphic_taiga_cobblestone', 'botania:metamorphic_mesa_cobblestone'])
+    e.add('minecraft:stone_crafting_materials', ['botania:metamorphic_forest_cobblestone', 'botania:metamorphic_plains_cobblestone', 'botania:metamorphic_fungal_cobblestone', 'botania:metamorphic_mountain_cobblestone', 'botania:metamorphic_swamp_cobblestone', 'botania:metamorphic_desert_cobblestone', 'botania:metamorphic_taiga_cobblestone', 'botania:metamorphic_mesa_cobblestone'])
+    e.add('forge:cobblestone', ['botania:metamorphic_forest_cobblestone', 'botania:metamorphic_plains_cobblestone', 'botania:metamorphic_fungal_cobblestone', 'botania:metamorphic_mountain_cobblestone', 'botania:metamorphic_swamp_cobblestone', 'botania:metamorphic_desert_cobblestone', 'botania:metamorphic_taiga_cobblestone', 'botania:metamorphic_mesa_cobblestone'])
 })
 
 ServerEvents.tags('block', e => {
@@ -19,6 +23,5 @@ ServerEvents.tags('worldgen/biome', e => {
     //     'splendid_ranching:magma_mounts',
     //     'splendid_ranching:moss_blanket',
     //     'splendid_ranching:opal_desert',
-    //     'splendid_ranching:the_wilds'
     // ])
 })

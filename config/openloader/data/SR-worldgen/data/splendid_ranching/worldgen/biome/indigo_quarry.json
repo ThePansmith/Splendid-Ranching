@@ -26,11 +26,9 @@
   "features": [
     [
       "splendid_ranching:indigo_quarry/chorus_placed",
-      "splendid_ranching:indigo_quarry/lichen_placed",
       "splendid_ranching:indigo_quarry/glow_shroom_placed",
-      "splendid_ranching:indigo_quarry/bowl_lichen_placed",
-      "quark:glow_shrooms"
-
+      "splendid_ranching:indigo_quarry/vegitation_placed",
+      "splendid_ranching:indigo_quarry/mushroom_placed"
     ],
     [],
     [],

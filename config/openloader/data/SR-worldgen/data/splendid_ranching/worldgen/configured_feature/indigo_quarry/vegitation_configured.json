@@ -6,10 +6,21 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "quark:glow_lichen_growth"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 90,
+                "data": {
+                  "Name": "galosphere:lichen_roots"
+                }
+              },
+              {
+                "weight": 10,
+                "data": {
+                  "Name": "galosphere:bowl_lichen"
+                }
+              }
+            ]
           }
         }
       },

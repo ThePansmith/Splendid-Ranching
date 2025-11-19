@@ -31,7 +31,10 @@
     [
       "splendid_ranching:opal_desert/opal_spike_placed",
       "atmospheric:dune_rock",
-      "atmospheric:patch_arid_sprouts"
+      "atmospheric:patch_arid_sprouts",
+      "atmospheric:patch_aloe_vera",
+      "atmospheric:patch_aloe_vera_extra",
+      "atmospheric:dragon_roots"
     ]
   ]
 }
