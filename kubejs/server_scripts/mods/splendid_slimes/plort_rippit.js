@@ -168,40 +168,64 @@ const rippitOutputs = {
 
     // t2
     ender: [
-
+        { item: 'minecraft:ender_pearl', count: 4, weight: 70 },
+        { item: 'minecraft:diamond', count: 4, weight: 30 }
     ],
     luminous: [
-
+        { item: 'minecraft:glowstone_dust', count: 4, weight: 70 },
+        { item: 'galosphere:silver_ingot', count: 6, weight: 30 }
     ],
     magma: [
-
+        { item: 'minecraft:magma_cream', count: 4, weight: 50 },
+        { item: 'minecraft:quartz', count: 6, weight: 30 },
+        { item: 'minecraft:gold_ingot', count: 6, weight: 20 }
     ],
     charred: [
-
+        { item: 'supplementaries:ash', count: 4, weight: 30 },
+        { item: 'minecraft:charcoal', count: 8, weight: 50 },
+        { item: 'minecraft:wither_rose', count: 4, weight: 20 }
     ],
     weeping: [
-
+        { item: 'minecraft:gunpowder', count: 4, weight: 40 },
+        { item: 'minecraft:ghast_tear', count: 1, weight: 30 },
+        { item: 'minecraft:crying_obsidian', count: 4, weight: 30 }
     ],
     crimson: [
-
+        { item: 'minecraft:crimson_fungus', count: 1, weight: 20 },
+        { item: 'minecraft:weeping_vines', count: 4, weight: 40 },
+        { item: 'minecraft:crimson_nylium', count: 4, weight: 40 }
     ],
     warped: [
-
+        { item: 'minecraft:warped_fungus', count: 1, weight: 20 },
+        { item: 'minecraft:twisting_vines', count: 4, weight: 40 },
+        { item: 'minecraft:warped_nylium', count: 4, weight: 40 }
     ],
     geode: [
-
+        { item: 'minecraft:raw_iron', count: 4, weight: 30 },
+        { item: 'minecraft:raw_copper', count: 4, weight: 30 },
+        { item: 'create:raw_zinc', count: 4, weight: 30 },
+        { item: 'galosphere:raw_silver', count: 4, weight: 30 }
     ],
     gem: [
-
+        { item: 'minecraft:amethyst_shard', count: 6, weight: 40 },
+        { item: 'minecraft:quartz', count: 6, weight: 30 },
+        { item: 'minecraft:lapis_lazuli', count: 6, weight: 20 },
+        { item: 'minecraft:emerald', count: 6, weight: 10 }
     ],
     dark: [
-
+        { item: 'botania:ender_air_bottle', count: 4, weight: 20 },
+        { item: 'minecraft:obsidian', count: 4, weight: 50 },
+        { item: 'minecraft:glow_ink_sac', count: 4, weight: 30 }
     ],
     sculk: [
-
+        { item: 'minecraft:sculk', count: 4, weight: 30 },
+        { item: 'minecraft:sculk_catalyst', count: 4, weight: 30 }
     ],
     magnetic: [
-
+        { item: 'alexscaves:notor_gizmo', count: 1, weight: 20 },
+        { item: 'alexscaves:telecore', count: 1, weight: 20 },
+        { item: 'alexscaves:heavyweight', count: 1, weight: 20 },
+        { item: 'alexscaves:galena', count: 24, weight: 40 }
     ],
 
     // t3
