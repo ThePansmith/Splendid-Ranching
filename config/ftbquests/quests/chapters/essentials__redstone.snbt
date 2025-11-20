@@ -704,7 +704,7 @@
 		}
 		{
 			description: [
-				"{ \"color\":\"blue\", \"text\": \"Advanced Peripherals Book\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"run_command\", \"value\": \"/open-patchouli-book @s littlelogistics:guide \" } }"
+				"{ \"color\":\"blue\", \"text\": \"Little Logistics Book\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"run_command\", \"value\": \"/open-patchouli-book @s littlelogistics:guide\" } }"
 				""
 				"Little Logistics is a mod for Minecraft Forge focused on efficient, affordable, long-distance transport."
 			]
