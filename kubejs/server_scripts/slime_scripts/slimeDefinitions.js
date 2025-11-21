@@ -35,7 +35,7 @@ global.slimeDefinitionsData = {
         name: "Alien",
         color: "#994399",
         particle: {
-            item: "minecraft:purpur_block"
+            item: "minecraft:chorus_plant"
         },
         hat_y_offset: -0.55,
         diet: "diet.splendid_slimes.alien",
@@ -247,9 +247,9 @@ global.slimeDefinitionsData = {
         name: "Dusty",
         color: "#575122",
         particle: {
-            item: "minecraft:gravel"
+            item: "atmospheric:roasted_yucca_bundle"
         },
-        hat_y_offset: -0.55,
+        hat_y_offset: -1,
         diet: "diet.splendid_slimes.dusty",
         foods: [{ item: "supplementaries:ash" }, { item: "create:powdered_obsidian" }],
         favorite_food: {
@@ -777,9 +777,9 @@ global.slimeDefinitionsData = {
         name: "Rad",
         color: "#6cbe3d",
         particle: {
-            item: "alexscaves:unrefined_waste"
+            item: "minecraft:lime_concrete"
         },
-        hat_y_offset: -0.55,
+        hat_y_offset: -1,
         diet: "diet.splendid_slimes.rad",
         foods: [{ item: "alexscaves:radgill" }, { item: "alexscaves:spelunkie" }, { item: "alexscaves:slam" }, { item: "alexscaves:green_soylent" }],
         favorite_food: {
@@ -805,9 +805,9 @@ global.slimeDefinitionsData = {
         name: "Rocky",
         color: "#4b4b4b",
         particle: {
-            item: "minecraft:deepslate"
+            item: "minecraft:deepslate_tiles"
         },
-        hat_y_offset: -0.55,
+        hat_y_offset: -0.5,
         diet: "diet.splendid_slimes.rocky",
         foods: [{ tag: "forge:vegetables", item: 'minecraft:pumpkin_pie' }],
         favorite_food: {

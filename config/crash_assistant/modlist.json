@@ -4,6 +4,11 @@
     "modId": "forge",
     "version": "fmlloader-1.20.1-47.4.0.jar"
   },
+  "AdvancedLootInfo-forge-1.20.1-1.5.2.jar": {
+    "jarName": "AdvancedLootInfo-forge-1.20.1-1.5.2.jar",
+    "modId": "ali",
+    "version": "1.20.1-1.5.2"
+  },
   "AdvancedPeripherals-1.20.1-0.7.46r.jar": {
     "jarName": "AdvancedPeripherals-1.20.1-0.7.46r.jar",
     "modId": "advancedperipherals",
@@ -109,6 +114,11 @@
     "modId": "buildinggadgets2",
     "version": "1.0.8"
   },
+  "cc-tweaked-1.20.1-forge-1.116.2.jar": {
+    "jarName": "cc-tweaked-1.20.1-forge-1.116.2.jar",
+    "modId": "computercraft",
+    "version": "1.116.2"
+  },
   "citadel-2.6.2-1.20.1.jar": {
     "jarName": "citadel-2.6.2-1.20.1.jar",
     "modId": "citadel",
@@ -164,10 +174,10 @@
     "modId": "craftingtweaks",
     "version": "18.2.6"
   },
-  "CrashAssistant-forge-1.19-1.20.1-1.10.20.jar": {
-    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.20.jar",
+  "CrashAssistant-forge-1.19-1.20.1-1.10.21.jar": {
+    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.21.jar",
     "modId": "crash_assistant",
-    "version": "1.10.20"
+    "version": "1.10.21"
   },
   "create-1.20.1-6.0.8.jar": {
     "jarName": "create-1.20.1-6.0.8.jar",
@@ -208,6 +218,11 @@
     "jarName": "CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
     "modId": "numismatics",
     "version": "1.0.15+forge-mc1.20.1"
+  },
+  "Cucumber-1.20.1-7.0.16.jar": {
+    "jarName": "Cucumber-1.20.1-7.0.16.jar",
+    "modId": "cucumber",
+    "version": "7.0.16"
   },
   "cupboard-1.20.1-2.7.jar": {
     "jarName": "cupboard-1.20.1-2.7.jar",
@@ -258,6 +273,11 @@
     "jarName": "essentials-1.20.1-2.16.0.jar",
     "modId": "essentials",
     "version": "1.20.1-2.16.0"
+  },
+  "everycomp-1.20-2.9.11-forge.jar": {
+    "jarName": "everycomp-1.20-2.9.11-forge.jar",
+    "modId": "everycomp",
+    "version": "1.20-2.9.11"
   },
   "extra_gauges-2.0.7.jar": {
     "jarName": "extra_gauges-2.0.7.jar",
@@ -482,10 +502,20 @@
     "modId": "mousetweaks",
     "version": "2.25.1"
   },
-  "multiblocked2-1.20.1-1.0.36.jar": {
-    "jarName": "multiblocked2-1.20.1-1.0.36.jar",
+  "multiblocked2-1.20.1-1.0.37.jar": {
+    "jarName": "multiblocked2-1.20.1-1.0.37.jar",
     "modId": "mbd2",
-    "version": "1.0.36"
+    "version": "1.0.37"
+  },
+  "NaturesCompass-1.20.1-1.11.2-forge.jar": {
+    "jarName": "NaturesCompass-1.20.1-1.11.2-forge.jar",
+    "modId": "naturescompass",
+    "version": "1.20.1-1.11.2-forge"
+  },
+  "nonetherportal-1.20.1-1.0.jar": {
+    "jarName": "nonetherportal-1.20.1-1.0.jar",
+    "modId": "nonetherportal",
+    "version": "1.20.1-1.0"
   },
   "notenoughcrashes-4.4.9+1.20.1-forge.jar": {
     "jarName": "notenoughcrashes-4.4.9+1.20.1-forge.jar",
@@ -577,11 +607,6 @@
     "modId": "resourcefulconfig",
     "version": "2.1.3"
   },
-  "restrictedportals-forge-1.20.1-1.5.0.jar": {
-    "jarName": "restrictedportals-forge-1.20.1-1.5.0.jar",
-    "modId": "restrictedportals",
-    "version": "1.5.0"
-  },
   "rhino-forge-2001.2.3-build.10.jar": {
     "jarName": "rhino-forge-2001.2.3-build.10.jar",
     "modId": "rhino",
@@ -627,10 +652,10 @@
     "modId": "spark",
     "version": "1.10.53"
   },
-  "splendid_slimes-0.14.4.jar": {
-    "jarName": "splendid_slimes-0.14.4.jar",
+  "splendid_slimes-0.15.0.jar": {
+    "jarName": "splendid_slimes-0.15.0.jar",
     "modId": "splendid_slimes",
-    "version": "0.14.4"
+    "version": "0.15.0"
   },
   "structure_layout_optimizer-forge-1.0.11.jar": {
     "jarName": "structure_layout_optimizer-forge-1.0.11.jar",
@@ -661,6 +686,11 @@
     "jarName": "wits-1.1.0+1.20.1-forge.jar",
     "modId": "wits",
     "version": "1.1.0+1.20.1-forge"
+  },
+  "woodworks-1.20.1-3.0.2.jar": {
+    "jarName": "woodworks-1.20.1-3.0.2.jar",
+    "modId": "woodworks",
+    "version": "3.0.2"
   },
   "Xaeros_Minimap_25.2.10_Forge_1.20.jar": {
     "jarName": "Xaeros_Minimap_25.2.10_Forge_1.20.jar",

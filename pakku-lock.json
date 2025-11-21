@@ -49,7 +49,10 @@
             ]
         },
         {
-            "pakku_id": "alnTeOIfdOVWsguh",
+            "pakku_id": "TmyRjupK3HesHKC0",
+            "pakku_links": [
+                "WoziNxZDFdBSmp7d"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "advanced-loot-info"
@@ -2223,6 +2226,44 @@
             ]
         },
         {
+            "pakku_id": "EvmhcjksopdjU2WN",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "every-compat"
+            },
+            "name": {
+                "curseforge": "Every Compat (Wood Good)"
+            },
+            "id": {
+                "curseforge": "628539"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "everycomp-1.20-2.9.11-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7223/408/everycomp-1.20-2.9.11-forge.jar",
+                    "id": "7223408",
+                    "parent_id": "628539",
+                    "hashes": {
+                        "sha1": "416f98724bc92666714c440a803f7498dd4b416c",
+                        "md5": "f2b71e85e89526309bb4233f37775292"
+                    },
+                    "required_dependencies": [
+                        "499980"
+                    ],
+                    "size": 2807174,
+                    "date_published": "2025-11-15T04:56:56.203Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "nCmxosmzVkhAJVLK",
             "pakku_links": [
                 "cWaWDFhXMuQiyw9m"
@@ -3953,6 +3994,42 @@
                     "required_dependencies": [],
                     "size": 1333455,
                     "date_published": "2025-11-06T12:29:47.037Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "FG5Pj3oB8TlqsZSG",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "more-density-functions"
+            },
+            "name": {
+                "curseforge": "More Density Functions"
+            },
+            "id": {
+                "curseforge": "1016653"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "moredensityfunctions-forge-1.20.1-2.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6957/343/moredensityfunctions-forge-1.20.1-2.2.0.jar",
+                    "id": "6957343",
+                    "parent_id": "1016653",
+                    "hashes": {
+                        "sha1": "e2c631de051e612106fd9432bfce244e8fbf124f",
+                        "md5": "05a0fb966448638821740f3c3f4d6e8a"
+                    },
+                    "required_dependencies": [],
+                    "size": 243866,
+                    "date_published": "2025-09-02T22:43:15.847Z"
                 }
             ]
         },
