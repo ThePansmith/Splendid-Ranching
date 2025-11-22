@@ -287,7 +287,7 @@ global.slimeDefinitionsData = {
         hat_y_offset: -0.55,
         diet: "diet.splendid_slimes.fire",
         foods: [
-            { tag: "forge:logs" },
+            { tag: "minecraft:logs" },
             { tag: "minecraft:coals" },
             { item: "supplementaries:lumisene_bottle" }
         ],
@@ -666,7 +666,7 @@ global.slimeDefinitionsData = {
         },
         hat_z_offset: -0.06,
         diet: "diet.splendid_slimes.phantom",
-        foods: [{ tag: "minecraft:wools" }, { tag: "minecraft:beds" }],
+        foods: [{ tag: "minecraft:wool" }, { tag: "minecraft:beds" }],
         favorite_food: {
             item: "minecraft:purple_bed"
         },
@@ -860,7 +860,7 @@ global.slimeDefinitionsData = {
         },
         hat_y_offset: -0.55,
         diet: "diet.splendid_slimes.sandy",
-        foods: [{ tag: "minecraft:fruits" }],
+        foods: [{ tag: "forge:fruits" }],
         favorite_food: {
             item: "atmospheric:passion_fruit"
         }
