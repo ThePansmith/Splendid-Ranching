@@ -1116,6 +1116,7 @@
 				"436E38D04AA33B83"
 				"001EDDF575B9A323"
 			]
+			description: ["view deps"]
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
