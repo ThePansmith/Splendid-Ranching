@@ -1,9 +1,15 @@
 jeo packjam repo!!!
+[Packs Curseforge](https://www.curseforge.com/minecraft/modpacks/splendid-ranching)
 
-## Contributing to a repository that uses the Panpack template
-1. Clone your fork of the repository into an empty [`(instancename)\minecraft`](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) folder
-2. Copy the contents of `(instancename)\minecraft\.pakku\prism-overrides` into your `(instancename)` folder to have a working Prism Instance.
+### Contributing to this modpack
+[install pakku](https://juraj-hrivnak.github.io/Pakku/installing-pakku.html) (or use java -jar pakku.jar in minecraft folder)
+[git](https://git-scm.com/)
 
-From there, you can start your newly created instance and the mods will be downloaded for you.
+1. Create a prism launcher instance for minecraft 1.20.1, on forge 47.4.0
+2. Open the newly create instance folder with a terminal `instances/(instancename)` and run `git clone https://github.com/Deepacat/Splendid-Ranching.git`
+3. Rename the cloned git repo folder to `minecraft` so it follows `instances/(instancename)/minecraft/`
+4. Open `(instancename)\minecraft\` in terminal and run `pakku fetch` to download existing mods in repo from pakku manifest, if pakku is not locally installed use `java -jar pakku.jar fetch`
+5. Copy the contents inside of `(instancename)\minecraft\.pakku\"prism-overrides"` and `"overrides"`into your `(instancename)` folder
+6. You now have a functioning repo/game instance to run, modify and commit from 
 
-For more important information on Panpack Template, read [here](https://github.com/ThePansmith/PanPack).
+for more IMPORTANT info on panpack template, read PanPackReadMe.md
