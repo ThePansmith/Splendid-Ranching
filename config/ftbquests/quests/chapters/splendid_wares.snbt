@@ -150,6 +150,7 @@
 			size: 1.0d
 			tasks: [{
 				consume_items: true
+				count: 2L
 				disable_toast: true
 				icon: "numismatics:crown"
 				id: "7B095F39864F16D3"
@@ -158,7 +159,7 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			title: "&f Slime Feeder | &6512&a☻"
+			title: "&f Slime Feeder | &61024&a☻"
 			x: -5.0d
 			y: -3.5d
 		}
@@ -183,12 +184,12 @@
 				count: 4L
 				disable_toast: true
 				id: "5BB4D92E785DF15F"
-				item: "numismatics:cog"
+				item: "numismatics:crown"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
-			title: "&f Animal Feeder | &6256&a☻"
+			title: "&f Animal Feeder | &6512&a☻"
 			x: -4.5d
 			y: -2.5d
 		}
@@ -1663,6 +1664,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
+			subtitle: "Sharing is caring"
 			tasks: [{
 				consume_items: true
 				count: 2L
@@ -1673,7 +1675,7 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			title: "&f Bank Card | &6128&a☻"
+			title: "&f Bank Card | &664&a☻"
 			x: -6.0d
 			y: 0.5d
 		}
@@ -1781,14 +1783,15 @@
 			size: 1.0d
 			tasks: [{
 				consume_items: true
+				count: 4L
 				disable_toast: true
 				id: "139A1F1454A6F051"
-				item: "numismatics:crown"
+				item: "numismatics:cog"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
-			title: "&f Rainbounce Boots | &6512&a☻"
+			title: "&f Rainbounce Boots | &6256&a☻"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -1834,6 +1837,7 @@
 		{
 			dependencies: ["52D66243AA5C9C74"]
 			id: "7E3B035C6E02A4F0"
+			subtitle: "You'll want it."
 			tasks: [{
 				id: "5F82CE53544DD50B"
 				item: {
@@ -1845,7 +1849,7 @@
 				}
 				type: "item"
 			}]
-			title: "Stay safe..."
+			title: "Rainboots safety requirement"
 			x: -1.5d
 			y: -1.5d
 		}
