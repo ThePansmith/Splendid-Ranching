@@ -44,7 +44,7 @@ ServerEvents.tags('block', e => {
     // biome surface blocks for animal spawns
     e.add('minecraft:animals_spawnable_on', [
         'minecraft:grass_block', 'minecraft:pink_terracotta', // dry reef
-        'botania:mycelite', 'galosphere:lichen_moss', // indigo quarry
+        'botania:metamorphic_fungal_stone', 'galosphere:lichen_moss', // indigo quarry
         'architects_palette:myonite', 'minecraft:moss_block', // moss blanket
         'architects_palette:onyx', 'supplementaries:flint_block', // magma mounts
         'minecraft:sand', 'atmospheric:arid_sand' // opal desert

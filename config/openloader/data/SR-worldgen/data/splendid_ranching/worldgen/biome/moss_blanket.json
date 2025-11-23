@@ -74,7 +74,13 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 10
-      }
+      },
+			{
+				"type": "splendid_slimes:splendid_slime",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 3
+			}
     ],
     "misc": [ ],
     "monster": [ ],
