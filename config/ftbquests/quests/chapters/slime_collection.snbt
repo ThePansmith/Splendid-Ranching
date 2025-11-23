@@ -963,6 +963,7 @@
 		}
 		{
 			dependencies: ["42831C5E7A8C2BA0"]
+			description: ["&aThis biome&r matches 7 of 9 preconditions for stimulating terror in humans."]
 			icon: "alexscaves:abyssmarine"
 			id: "16A5B65CA7253D8B"
 			tasks: [{
