@@ -1,0 +1,7 @@
+narrator:0
+tutorialStep:none
+hideBundleTutorial:true
+pauseOnLostFocus:false
+autoJump:false
+key_dropoff.key.dump:key.keyboard.unknown
+key_dropoff.key.deposit:key.keyboard.unknown
