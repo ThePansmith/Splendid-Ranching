@@ -12,5 +12,5 @@ ItemEvents.tooltip(e => {
     e.add('splendid_slimes:plort_rippit', ['Extracts resources from a slime heart'])
     e.add('splendid_slimes:slime_feeder', ['Nearby slimes can eat from it\'s inventory'])
     // quark
-    e.add('quark:feeding_trough', ['Feeds nearby slimes from items inside'])
+    e.add('quark:feeding_trough', ['Feeds nearby animals from items inside'])
 })
