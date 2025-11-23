@@ -16,7 +16,7 @@ jobs:
   info:
     name: Project Info
     runs-on: ubuntu-latest
-    if: ${{  github.repository_owner == 'Deepacat' }}
+    if: ${{  github.repository_owner == 'Deepacat' }} # Change this! (This is to prevent forks from running the workflow and failing due to not having access to secrets.)
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}
@@ -33,7 +33,6 @@ jobs:
       make_pr: ${{ steps.check.outputs.make_pr }}
       pakku-lock_changed: ${{ steps.filter.outputs.pakku-lock }}
       kubejs_changed: ${{ steps.filter.outputs.kubejs }}
-      webhook_present: ${{ steps.webhook.outputs.present }}
 
     steps:
       - name: Checkout
@@ -67,7 +66,7 @@ jobs:
         run: |
           tag=$(git describe --tags --abbrev=0 origin/main)
           if [ -z "$tag" ]; then
-            echo "Latest tag not found, likely the first time this script has been ran. " && exit 1
+            echo "Latest tag not found" && exit 1
           else
             echo "Latest tag found: $tag"
             echo "tag=$tag" >> $GITHUB_OUTPUT
@@ -159,16 +158,6 @@ jobs:
               - 'pakku-lock.json'
             kubejs:
               - 'kubejs/**'
-
-      - name: Check for webhook
-        id: webhook
-        shell: bash
-        run: |
-          if [ "${{ secrets.discord-webhook }}" == '' ]; then
-          echo "present=false" >> $GITHUB_OUTPUT
-          else
-          echo "present=true" >> $GITHUB_OUTPUT
-          fi
 
       - name: Changelog Dev Parser
         id: changelog_dev
@@ -300,7 +289,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: dev
           target_branch: main
-          #milestone: ${{ steps.changelog.outputs.version }} # Change this! (if you plan on using milestones)
           ignore_users: "dependabot"
           draft: true
           title: "Release: ${{ steps.changelog.outputs.version }}"
@@ -368,7 +356,7 @@ jobs:
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add .pakku/prism-overrides/mmc-pack.json
-            git commit -m "Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
+            git commit -m "ci: Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
             git push
           fi
 
@@ -380,7 +368,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5.0.0
 
-      - name: Replace strings with version # This replaces the word "DEV" in the file with the current version number, two examples of uses in a modpack are commented below, add as needed.
+      - name: Replace strings with version # Replaces the word "DEV" in the file with the version number, two examples of uses in a modpack are commented below, add as needed.
         shell: bash
         run: |
           set +e
@@ -419,7 +407,7 @@ jobs:
       - name: Preparing the curseforge artifact
         run: |
           cd ./build/curseforge/
-          mv *.zip "$(basename -s .zip *.zip)-curseforge.zip"
+          mv *.zip $(basename -s .zip *.zip)-curseforge.zip
 
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.6.2
@@ -431,7 +419,7 @@ jobs:
       - name: Preparing the server artifact
         run: |
           cd ./build/serverpack/
-          mv *.zip "$(basename -s .zip *.zip)-serverpack.zip"
+          mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
       - name: Upload server artifact
         uses: actions/upload-artifact@v4.6.2
@@ -470,6 +458,9 @@ jobs:
           if [ ! -f ${{ needs.info.outputs.project_file_name }}-serverpack.zip ]; then
             echo '::error::No value found for artifact `serverpack.zip`.' && exit 1
           fi
+          # if [ ! -f ${{ needs.info.outputs.project_file_name }}-multimc.zip ]; then
+          #   echo '::error::No value found for artifact `multimc.zip`.' && exit 1
+          # fi
           echo "All artifacts found"
 
       - name: Format diff
@@ -550,12 +541,62 @@ jobs:
           game-version: ${{ needs.info.outputs.mc_version }}
           release-type: ${{ needs.info.outputs.release_type }}
 
+  # release-modrinth:
+  #     name: Release to Modrinth
+  #     needs: [info, build-project, release-github]
+  #     runs-on: ubuntu-latest
+  #     if: ${{ needs.info.outputs.make_release == 'true' }}
+  #     outputs:
+  #       id: ${{ steps.release.outputs.id }}
+
+  #     steps:
+  #       - name: Check if MODRINTH_API_TOKEN exists
+  #         shell: bash
+  #         run: |
+  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           fi
+
+  #       - name: Download artifact
+  #         uses: actions/download-artifact@v5.0.0
+  #         with:
+  #           merge-multiple: true
+
+  #       - name: Check if artifact exist
+  #         id: check_artifact
+  #         shell: bash
+  #         run: |
+  #           if [ ! -f ${{ needs.info.outputs.project_file_name }}-modrinth.mrpack ]; then
+  #             echo '::error::No value found for artifact `modrinth.mrpack`.' && exit 1
+  #           fi
+  #           echo "All artifacts found"
+
+  # - name: Upload Modrinth
+  #   id: release
+  #   uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #   with:
+  #     api-token: ${{ secrets.MODRINTH_TOKEN }}
+  #     project-id: ${{ vars.MODRINTH_ID }}
+  #     modpack-path: ${{ needs.info.outputs.project_file_name }}-modrinth.mrpack
+  #     changelog: ${{ needs.info.outputs.changelog }}
+  #     changelog-format: markdown
+  #     game-version: ${{ needs.info.outputs.mc_version }}
+  #     display-name: ${{ needs.info.outputs.project_full_name }}
+
+  #     release-type: ${{ needs.info.outputs.release_type }}
+
   # discord-message:
   #   name: Discord Message
   #   needs: [info, release-github, release-curseforge]
   #   runs-on: ubuntu-latest
-  #   if: needs.info.outputs.webhook_present == 'true'
   #   steps:
+  #     - name: Check for webhook
+  #       shell: bash
+  #       run: |
+  #         if [ "${{ secrets.discord-webhook }}" == '' ]; then
+  #           echo '`discord-webhook` not set, skipping...' && exit 0
+  #         fi
+
   #     - name: Truncate Changelog
   #       id: truncated
   #       uses: cisox/read-more-action@v1.0.2
@@ -567,15 +608,15 @@ jobs:
   #       uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
   #       with:
   #         key: ${{ secrets.discord-webhook  }}
-  #         username: "Panpack" # Change this!
-  #         avatar_url: "https://media.forgecdn.net/avatars/thumbnails/798/822/64/64/638160732420962168.png" # Change this! (and the below curseforge url)
+  #         username: "CABIN" # Change this!
+  #         avatar_url: "https://media.forgecdn.net/avatars/thumbnails/899/846/64/64/638346046780138525.png" # Change this! (and the below curseforge url)
   #         content_links_no_embed: .+
   #         content: |
-  #           **Release**: `${{ needs.info.outputs.project_full_name }}`
+  #           **Release**: `${{ needs.info.outputs.project_version }}`
   #           **Release Type**: `${{ needs.info.outputs.release_type }}`
   #           **Game Version**: `${{ needs.info.outputs.mc_version }}`
 
-  #           [CurseForge](https://www.curseforge.com/minecraft/modpacks/template-pack/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+  #           [CurseForge](https://www.curseforge.com/minecraft/modpacks/cabin/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
   #           ```markdown
   #           ${{ steps.truncated.outputs.text  }}
   #           - ...```

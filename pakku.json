@@ -1,5 +1,5 @@
 {
-    "name": "Splendid-Ranching",
+    "name": "SplendidRanching",
     "version": "0.1.1",
     "release_type": "release",
     "description": "Slime rancher inspired modpack for the JEO Modpack Jam",
@@ -8,6 +8,7 @@
         "config",
         "defaultconfigs",
         "kubejs",
+        "ldlib",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
