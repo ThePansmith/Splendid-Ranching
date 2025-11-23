@@ -8,11 +8,9 @@
 	id: "190A191644CF15F9"
 	images: [
 		{
+			click: "https://discord.gg/dc62e25CEu"
 			height: 1.0d
-			hover: [
-				"Discord Link"
-				"(None yet)"
-			]
+			hover: ["Discord Link"]
 			image: "supplementaries:textures/gui/book/icon/discord.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -56,6 +54,8 @@
 				"&bUni &7-&r Help with worldgen, biome placements, and world \"shape\""
 				"&5Vnator &7-&r Assistance with data entry, general feedback"
 				"&bCyb0124&r &7-&r fixing a Multiblocked2 bug and helping with scripts"
+				"&bPansmith &7-&r Menu placeholder, panpack template, help with actions"
+				"&bJuiceybeans &7-&r Misc fixes and edits"
 				""
 				"&l&nSpecial Mentions&r&r"
 				""
@@ -70,7 +70,7 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "minecraft:textures/gui/sprites/icon/accessibility.png"
+					Icon: "minecraft:particle/heart"
 				}
 			}
 			id: "337CE0700D88BE3D"
@@ -80,7 +80,7 @@
 				item: "fluffy_fur:niko_plush"
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "circle"
 			subtitle: "Thank you ♥"
 			tasks: [{
 				id: "2F7E4F6C74069170"
