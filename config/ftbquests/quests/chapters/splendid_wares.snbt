@@ -152,7 +152,7 @@
 				consume_items: true
 				count: 2L
 				disable_toast: true
-				icon: "numismatics:crown"
+				icon: "numismatics:cog"
 				id: "7B095F39864F16D3"
 				item: "numismatics:cog"
 				match_nbt: false
