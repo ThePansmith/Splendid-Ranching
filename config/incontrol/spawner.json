@@ -9,7 +9,7 @@
         },
         "conditions": {
             "dimension": "minecraft:overworld",
-            "maxthis": 20
+            "maxthis": 100
         }
     }
 ]
