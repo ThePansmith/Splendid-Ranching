@@ -998,6 +998,8 @@
 				"You can purchase more &eCorral&r blocks from the &cSplendid Wares&r Quest Page! (When unlocked)"
 				""
 				"Also, to stop yourself from making &dlargos&r accidentally, different breeds of &dslime&r should be in seperate pens!"
+				""
+				"&8[&r &7As well as using an actual floor of non natural blocks, so more slimes don't spawn in your pen&r &8]&r"
 			]
 			icon: "splendid_slimes:corral_block"
 			id: "7AA6A101567ED2C6"
@@ -1028,7 +1030,7 @@
 				""
 				"And... it seems something &2else&r has appeared? We are unsure of the &2origins&r, it is up to you to investigate further &9>w<&r"
 				""
-				"[ Fulfilling a lab research quest will grant your team the ability to use the crafting table recipe for the researches related craft outputs ]"
+				"&8[&r &7Fulfilling a lab research quest will grant your team the ability to use the crafting table recipe for the researches related craft outputs &8]&r"
 			]
 			hide_dependent_lines: true
 			icon: "botania:light_relay"
