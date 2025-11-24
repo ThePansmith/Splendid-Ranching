@@ -62,7 +62,7 @@
         "offer": { 
           "item": "portable_blueprints:worn_blueprint", 
           "count": 1,
-          "nbt": "{blueprint_name:\"basic_corral_template\",display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Corral\"}'}}"
+          "nbt": "{blueprint_name:\"basic_corral_template\", owner_name: \"SSCCOGAC\", display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Corral\"}'}}"
         },
         "request": { "item": "numismatics:cog", "count": 1 },
         "numismatics_cost": 256,
