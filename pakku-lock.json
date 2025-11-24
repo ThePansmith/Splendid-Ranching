@@ -1816,6 +1816,44 @@
             ]
         },
         {
+            "pakku_id": "4EAre7e2HEoOTHMp",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-transmission"
+            },
+            "name": {
+                "curseforge": "Create: Transmission!"
+            },
+            "id": {
+                "curseforge": "1354280"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createtransmission-1.0.4+forge-create6-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7129/290/createtransmission-1.0.4+forge-create6-1.20.1.jar",
+                    "id": "7129290",
+                    "parent_id": "1354280",
+                    "hashes": {
+                        "sha1": "bcfbb427fd52e4a7a797c66fb4951f8458b73454",
+                        "md5": "7751b1c23d16a7b298c98f04227c4984"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 858845,
+                    "date_published": "2025-10-20T12:39:58.877Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "6eZVO9PQBGuLbvzl",
             "type": "MOD",
             "slug": {
