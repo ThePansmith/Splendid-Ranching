@@ -2,14 +2,33 @@
     {
         "mob": "splendid_slimes:splendid_slime",
         "persecond": 0.3,
-        "attempts": 100,
+        "attempts": 200,
         "amount": {
-            "minimum": 1,
-            "maximum": 3
+            "minimum": 2,
+            "maximum": 4,
+            "groupdistance": 3
         },
         "conditions": {
             "dimension": "minecraft:overworld",
-            "maxthis": 50
+            "mindist": 30,
+            "maxlocal": 30,
+            "minheight": 60
+        }
+    },
+    {
+        "mob": "splendid_slimes:splendid_slime",
+        "persecond": 0.1,
+        "attempts": 100,
+        "amount": {
+            "minimum": 2,
+            "maximum": 4,
+            "groupdistance": 3
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "maxlocal": 15,
+            "minverticaldist": 20,
+            "maxheight": 60
         }
     }
 ]

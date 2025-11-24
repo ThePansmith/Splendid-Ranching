@@ -13,7 +13,7 @@ global.baseSlimeValueData = {
         each day the current volume is reduced by 25% of its previous value */
         currentVolume: 10, // initial volume on day 0 before any daily adjustments
         maxVolume: 200,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     // t0
     puddle: {
@@ -22,7 +22,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 220,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     rocky: {
         baseValue: 10,
@@ -30,7 +30,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 220,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     monster: {
         baseValue: 10,
@@ -38,7 +38,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 220,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     orby: {
         baseValue: 10,
@@ -46,7 +46,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 180,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     tabby: {
         baseValue: 10,
@@ -54,7 +54,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 220,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     sweet: {
         baseValue: 10,
@@ -62,7 +62,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 220,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     lush: {
         baseValue: 10,
@@ -70,7 +70,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 160,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     dusty: {
         baseValue: 10,
@@ -78,7 +78,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 220,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     crystal: {
         baseValue: 10,
@@ -86,7 +86,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     sandy: {
         baseValue: 10,
@@ -94,7 +94,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 200,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     fire: {
         baseValue: 10,
@@ -102,7 +102,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 180,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     alien: {
         baseValue: 10,
@@ -110,7 +110,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 180,
-        slimeDupeCost: 8
+        slimeDupeCost: 4
     },
     // alex
     abyssal: {
@@ -119,7 +119,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 12,
         maxVolume: 280,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     candy: {
         baseValue: 10,
@@ -127,7 +127,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 12,
         maxVolume: 240,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     rad: {
         baseValue: 10,
@@ -135,7 +135,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 12,
         maxVolume: 200,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     forlorn: {
         baseValue: 10,
@@ -143,7 +143,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 12,
         maxVolume: 240,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     jurassic: {
         baseValue: 10,
@@ -151,7 +151,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 240,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     neodymium: {
         baseValue: 10,
@@ -159,7 +159,7 @@ global.baseSlimeValueData = {
         priceRange: [5, 15],
         currentVolume: 10,
         maxVolume: 240,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     // t1
     bony: {
@@ -168,7 +168,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     rotting: {
         baseValue: 15,
@@ -176,7 +176,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     all_seeing: {
         baseValue: 15,
@@ -184,7 +184,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     blazing: {
         baseValue: 15,
@@ -192,7 +192,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 220,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     prisma: {
         baseValue: 15,
@@ -200,7 +200,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     bitwise: {
         baseValue: 15,
@@ -208,7 +208,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     boomcat: {
         baseValue: 15,
@@ -216,7 +216,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     fungus: {
         baseValue: 15,
@@ -224,7 +224,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     ocean: {
         baseValue: 15,
@@ -232,7 +232,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     stony: {
         baseValue: 15,
@@ -240,7 +240,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     tree: {
         baseValue: 15,
@@ -248,7 +248,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     phantom: {
         baseValue: 15,
@@ -256,7 +256,7 @@ global.baseSlimeValueData = {
         priceRange: [8, 22],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 16
+        slimeDupeCost: 8
     },
     // t2
     ender: {
@@ -265,7 +265,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     luminous: {
         baseValue: 20,
@@ -273,7 +273,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     magma: {
         baseValue: 20,
@@ -281,7 +281,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     charred: {
         baseValue: 20,
@@ -289,7 +289,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     weeping: {
         baseValue: 20,
@@ -297,7 +297,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     crimson: {
         baseValue: 20,
@@ -305,7 +305,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     warped: {
         baseValue: 20,
@@ -313,7 +313,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     geode: {
         baseValue: 20,
@@ -321,7 +321,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     gem: {
         baseValue: 20,
@@ -329,7 +329,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     dark: {
         baseValue: 20,
@@ -337,7 +337,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     sculk: {
         baseValue: 20,
@@ -345,7 +345,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     magnetic: {
         baseValue: 20,
@@ -353,7 +353,7 @@ global.baseSlimeValueData = {
         priceRange: [10, 30],
         currentVolume: 10,
         maxVolume: 250,
-        slimeDupeCost: 32
+        slimeDupeCost: 16
     },
     // t3
     shulking: {
@@ -362,7 +362,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     metallic: {
         baseValue: 30,
@@ -370,7 +370,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     minty: {
         baseValue: 30,
@@ -378,7 +378,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     jewel: {
         baseValue: 30,
@@ -386,7 +386,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     infernal: {
         baseValue: 30,
@@ -394,7 +394,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     mechanical: {
         baseValue: 30,
@@ -402,7 +402,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     tendril: {
         baseValue: 30,
@@ -410,7 +410,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     radiant: {
         baseValue: 30,
@@ -418,7 +418,7 @@ global.baseSlimeValueData = {
         priceRange: [20, 50],
         currentVolume: 10,
         maxVolume: 150,
-        slimeDupeCost: 48
+        slimeDupeCost: 32
     },
     // t4
     gold: {

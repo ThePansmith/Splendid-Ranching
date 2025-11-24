@@ -59,7 +59,7 @@ global.nukelist = finalNukeList
 ServerEvents.tags("item", (event) => {
     event.removeAllTagsFrom(global.nukelist)
     event.add("kubejs:nuked", global.nukelist)
-    // event.add("c:hidden_from_recipe_viewers", global.nukelist)
+    event.add("c:hidden_from_recipe_viewers", global.nukelist)
 })
 
 ServerEvents.tags("block", (event) => {
@@ -69,7 +69,7 @@ ServerEvents.tags("block", (event) => {
 ServerEvents.tags("fluid", (event) => {
     event.removeAllTagsFrom(global.nukelist)
     event.add("kubejs:nuked", global.nukelist)
-    // event.add("c:hidden_from_recipe_viewers", global.nukelist)
+    event.add("c:hidden_from_recipe_viewers", global.nukelist)
 })
 
 ServerEvents.recipes((event) => {

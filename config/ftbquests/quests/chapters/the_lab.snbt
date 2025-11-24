@@ -148,6 +148,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "71B4E7E732EAC1EF"
 					item: {
@@ -203,6 +204,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "2D46DFEE3420F2AC"
 					item: {
@@ -217,6 +219,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "15A26F8AFD706A30"
 					item: {
@@ -272,6 +275,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "50A796D4C7EFE5D7"
 					item: {
@@ -286,6 +290,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "09834A44ED2D8821"
 					item: {
@@ -300,6 +305,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "617AA2CD735506DE"
 					item: {
@@ -356,6 +362,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "0C885D136EBB2E41"
 					item: {
@@ -370,6 +377,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "7CD440EC2202D45D"
 					item: {
@@ -425,6 +433,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "22C54D1F1393CF69"
 					item: {
@@ -439,6 +448,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "1F102641A1A7C186"
 					item: {
@@ -494,6 +504,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "30E81026440DE17F"
 					item: {
@@ -508,6 +519,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "4442B2FE6AECD8DE"
 					item: {
@@ -522,6 +534,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "35EA9BFEDFA1E1E9"
 					item: {
@@ -577,6 +590,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "62B03C91C73E08E8"
 					item: {
@@ -591,6 +605,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "40E8AC970C2127BF"
 					item: {
@@ -605,6 +620,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 6L
 					id: "29E0560CF8537D27"
 					item: {
@@ -619,6 +635,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "2BB807B81C9095C7"
 					item: {
@@ -633,6 +650,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "6E5A8D0BAF6E2381"
 					item: {
@@ -688,6 +706,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "192C830FAD8D9B99"
 					item: {
@@ -702,6 +721,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "7CBEB40ACDBFB811"
 					item: {
@@ -716,6 +736,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "22AFFA05A17CB412"
 					item: {
@@ -730,6 +751,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "12D05B6030373D8C"
 					item: {
@@ -744,6 +766,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "07579DBA719DEFCC"
 					item: {
@@ -799,6 +822,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "72E28DE0AB8A4C64"
 					item: {
@@ -813,6 +837,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "7A95ADCA91084B46"
 					item: {
@@ -827,6 +852,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "42A8825F32A2BD2D"
 					item: {
@@ -882,6 +908,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "70FFFD4711FF11A6"
 					item: {
@@ -896,6 +923,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "4CF7BAB0F3D132BB"
 					item: "numismatics:sprocket"
 					type: "item"
@@ -942,6 +970,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "7304FE3D8428B8E1"
 					item: {
@@ -956,6 +985,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "0AFD585735CF62F3"
 					item: "numismatics:sprocket"
@@ -1009,6 +1039,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "78E9DF5BD4EB5200"
 					item: "numismatics:cog"
 					type: "item"
@@ -1047,11 +1078,13 @@
 			}]
 			tasks: [
 				{
+					consume_items: true
 					id: "0E52342524837CC9"
 					item: "numismatics:cog"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "7D1246F73DDAF604"
 					item: {
@@ -1066,6 +1099,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "3B73FF9CC6805C88"
 					item: {
@@ -1121,6 +1155,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "4071C58259B21388"
 					item: {
@@ -1135,12 +1170,14 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 3L
 					id: "64495C85981202BF"
 					item: { Count: 3, id: "numismatics:cog" }
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "6A42089B886B27D3"
 					item: {
@@ -1196,6 +1233,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "3B072963DEE6BDF4"
 					item: {
@@ -1210,11 +1248,13 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "23978CCACD939110"
 					item: "numismatics:cog"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "3A671DD9695F5ACD"
 					item: {
@@ -1270,11 +1310,13 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "740E7EF9973933D4"
 					item: { Count: 6, id: "numismatics:crown" }
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 12L
 					id: "56B65FF51F467F7E"
 					item: {
@@ -1289,6 +1331,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "642625C07BC0D82D"
 					item: {
@@ -1303,6 +1346,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "555232060971C06C"
 					item: {
@@ -1358,6 +1402,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "5F52A583E7CBEA33"
 					item: {
@@ -1372,12 +1417,14 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "5E19BBE54F4211AC"
 					item: { Count: 2, id: "numismatics:crown" }
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "0C30BD11A8F043AA"
 					item: {
@@ -1433,6 +1480,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "7CC3392DED46B9C3"
 					item: {
@@ -1447,6 +1495,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "2EA6400CF95DC912"
 					item: {
@@ -1461,6 +1510,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "6DB83074BCBA1EE7"
 					item: "numismatics:cog"
 					type: "item"
@@ -1507,6 +1557,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "73A52432FA2482FE"
 					item: {
@@ -1521,6 +1572,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "26A6D9E5C216BA8C"
 					item: {
@@ -1535,6 +1587,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "192F0E84E6AB662D"
 					item: "numismatics:crown"
 					type: "item"
@@ -1565,6 +1618,7 @@
 			}]
 			tasks: [
 				{
+					consume_items: true
 					count: 16L
 					id: "7182DDE91423552E"
 					item: {
@@ -1579,6 +1633,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "26AEF8B4B4F37574"
 					item: {
@@ -1593,6 +1648,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "7B414BABEB0576F9"
 					item: {
@@ -1607,6 +1663,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "42795CEED1AA1B79"
 					item: { Count: 2, id: "numismatics:cog" }
@@ -1638,6 +1695,7 @@
 			}]
 			tasks: [
 				{
+					consume_items: true
 					count: 32L
 					id: "02985AFA0D31CB59"
 					item: {
@@ -1652,6 +1710,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "4AF974CDF5286011"
 					item: {
@@ -1666,6 +1725,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "288928FAEEAEBCF3"
 					item: {
@@ -1680,6 +1740,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "0F9E6E682721B17C"
 					item: "numismatics:cog"
 					type: "item"
@@ -1710,6 +1771,7 @@
 			}]
 			tasks: [
 				{
+					consume_items: true
 					count: 32L
 					id: "2CED3BBF75393078"
 					item: {
@@ -1724,6 +1786,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "0FE4918B1473D2CA"
 					item: {
@@ -1738,6 +1801,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "120662A82F928D24"
 					item: {
@@ -1752,6 +1816,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "3235CED8EB53CF62"
 					item: { Count: 2, id: "numismatics:crown" }
@@ -1783,6 +1848,7 @@
 			}]
 			tasks: [
 				{
+					consume_items: true
 					count: 8L
 					id: "30AC040415BDA0C7"
 					item: {
@@ -1797,6 +1863,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "112FA00E5E971067"
 					item: {
@@ -1811,6 +1878,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "3EDCD2BAF6B4F587"
 					item: {
@@ -1825,6 +1893,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "0F9986284D8C788A"
 					item: "numismatics:cog"
 					type: "item"
@@ -1855,6 +1924,7 @@
 			}]
 			tasks: [
 				{
+					consume_items: true
 					count: 48L
 					id: "600A0C8EE81BD94C"
 					item: {
@@ -1869,6 +1939,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "561C02E1E5B8457A"
 					item: {
@@ -1883,6 +1954,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "50A8B08E5D95658C"
 					item: {
@@ -1897,6 +1969,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 8L
 					id: "2FFA2A0D4597092B"
 					item: {
@@ -1911,6 +1984,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "2486958A6E371A1D"
 					item: {
@@ -1925,6 +1999,7 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "2F8518DFB7A79832"
 					item: "numismatics:crown"
 					type: "item"

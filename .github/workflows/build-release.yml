@@ -33,6 +33,7 @@ jobs:
       make_pr: ${{ steps.check.outputs.make_pr }}
       pakku-lock_changed: ${{ steps.filter.outputs.pakku-lock }}
       kubejs_changed: ${{ steps.filter.outputs.kubejs }}
+      webhook_present: ${{ steps.webhook.outputs.present }}
 
     steps:
       - name: Checkout
@@ -366,7 +367,7 @@ jobs:
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add .pakku/prism-overrides/mmc-pack.json
-            git commit -m "ci: Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
+            git commit -m "Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
             git push
           fi
 
@@ -378,7 +379,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5.0.0
 
-      - name: Replace strings with version # This replaces the word "DEV" in the file with the current version number, two examples of uses in a modpack are commented below, add as needed.
+      - name: Replace strings with version # Replaces the word "DEV" in the file with the version number, two examples of uses in a modpack are commented below, add as needed.
         shell: bash
         run: |
           set +e
@@ -429,7 +430,7 @@ jobs:
       - name: Preparing the server artifact
         run: |
           cd ./build/serverpack/
-          mv *.zip $(basename -s .zip *.zip)-serverpack.zip
+          mv *.zip "$(basename -s .zip *.zip)-serverpack.zip"
 
       - name: Upload server artifact
         uses: actions/upload-artifact@v4.6.2
@@ -468,9 +469,6 @@ jobs:
           if [ ! -f ${{ needs.info.outputs.project_file_name }}-serverpack.zip ]; then
             echo '::error::No value found for artifact `serverpack.zip`.' && exit 1
           fi
-          # if [ ! -f ${{ needs.info.outputs.project_file_name }}-multimc.zip ]; then
-          #   echo '::error::No value found for artifact `multimc.zip`.' && exit 1
-          # fi
           echo "All artifacts found"
 
       - name: Format diff
@@ -515,7 +513,7 @@ jobs:
         run: |
           if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
             echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-          fi
+          fi  
 
       - name: Download artifact
         uses: actions/download-artifact@v5.0.0
@@ -551,33 +549,33 @@ jobs:
           game-version: ${{ needs.info.outputs.mc_version }}
           release-type: ${{ needs.info.outputs.release_type }}
 
-  # discord-message:
-  #   name: Discord Message
-  #   needs: [info, release-github, release-curseforge]
-  #   runs-on: ubuntu-latest
-  #   if: needs.info.outputs.webhook_present == 'true'
-  #   steps:
-  #     - name: Truncate Changelog
-  #       id: truncated
-  #       uses: cisox/read-more-action@v1.0.2
-  #       with:
-  #         text: "${{ needs.info.outputs.changelog }}"
-  #         max_chars: "1450"
+  discord-message:
+    name: Discord Message
+    needs: [info, release-github, release-curseforge]
+    runs-on: ubuntu-latest
+    if: needs.info.outputs.webhook_present == 'true'
+    steps:
+      - name: Truncate Changelog
+        id: truncated
+        uses: cisox/read-more-action@v1.0.2
+        with:
+          text: '${{ needs.info.outputs.changelog }}'
+          max_chars: '1450'
 
-  #     - name: Send Discord message
-  #       uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
-  #       with:
-  #         key: ${{ secrets.discord-webhook  }}
-  #         username: "Panpack" # Change this!
-  #         avatar_url: "https://media.forgecdn.net/avatars/thumbnails/798/822/64/64/638160732420962168.png" # Change this! (and the below curseforge url)
-  #         content_links_no_embed: .+
-  #         content: |
-  #           **Release**: `${{ needs.info.outputs.project_full_name }}`
-  #           **Release Type**: `${{ needs.info.outputs.release_type }}`
-  #           **Game Version**: `${{ needs.info.outputs.mc_version }}`
-
-  #           [CurseForge](https://www.curseforge.com/minecraft/modpacks/template-pack/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
-  #           ```markdown
-  #           ${{ steps.truncated.outputs.text  }}
-  #           - ...```
-  #           ** [Read more...](${{ needs.release-github.outputs.url }}) **
+      - name: Send Discord message
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
+        with:
+          key: ${{ secrets.discord-webhook  }}
+          username: "Panpack" # Change this!
+          avatar_url: "https://media.forgecdn.net/avatars/thumbnails/798/822/64/64/638160732420962168.png" # Change this! (and the below curseforge url)
+          content_links_no_embed: .+
+          content: |
+            **Release**: `${{ needs.info.outputs.project_full_name }}`
+            **Release Type**: `${{ needs.info.outputs.release_type }}`
+            **Game Version**: `${{ needs.info.outputs.mc_version }}`
+          
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/template-pack/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            ```markdown
+            ${{ steps.truncated.outputs.text  }}
+            - ...```
+            ** [Read more...](${{ needs.release-github.outputs.url }}) **

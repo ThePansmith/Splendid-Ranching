@@ -48,6 +48,7 @@ ServerEvents.tags('item', e => {
         'farmersdelight:ham',
         'farmersdelight:salmon_slice',
         'farmersdelight:cod_slice',
+        '#forge:raw_fishes'
     ])
     e.add('forge:raw_fishes', [
         'minecraft:pufferfish',

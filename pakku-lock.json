@@ -5771,7 +5771,7 @@
             ]
         },
         {
-            "pakku_id": "8qLokQNLAVnBeKfE",
+            "pakku_id": "1k7siXmwzUojoPxs",
             "type": "MOD",
             "slug": {
                 "curseforge": "splendid-slimes"
@@ -5785,7 +5785,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.15.0.jar",
+                    "file_name": "splendid_slimes-0.16.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5793,18 +5793,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7234/503/splendid_slimes-0.15.0.jar",
-                    "id": "7234503",
+                    "url": "https://edge.forgecdn.net/files/7256/48/splendid_slimes-0.16.0.jar",
+                    "id": "7256048",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "6cc05de6df42361d2e8e9fe9a006bce09c03d45d",
-                        "md5": "24eeaf409d419dea1276b5066e18130c"
+                        "sha1": "49b81f169ee57334415fe84baad88ee6e14400d9",
+                        "md5": "339155d48527fa25b461fc50e87b404c"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 465869,
-                    "date_published": "2025-11-18T03:21:50.763Z"
+                    "size": 472197,
+                    "date_published": "2025-11-24T02:36:28.790Z"
                 }
             ]
         },

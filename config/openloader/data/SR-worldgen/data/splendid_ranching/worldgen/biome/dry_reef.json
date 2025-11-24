@@ -62,19 +62,19 @@
 				"type": "minecraft:rabbit",
 				"maxCount": 6,
 				"minCount": 2,
-				"weight": 2
+				"weight": 3
 			},
 			{
 				"type": "minecraft:sheep",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 2
+				"weight": 3
 			},
 			{
 				"type": "splendid_slimes:splendid_slime",
-				"maxCount": 3,
+				"maxCount": 4,
 				"minCount": 2,
-				"weight": 3
+				"weight": 10
 			}
 		],
 		"misc": [ ],

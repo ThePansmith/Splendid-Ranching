@@ -21,13 +21,13 @@
         "type": "minecraft:chicken",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 10
+        "weight": 2
       },
 			{
 				"type": "splendid_slimes:splendid_slime",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 3
+				"weight": 10
 			}
     ]
   },

@@ -14,6 +14,9 @@
 /ESM/
 /xaero/
 /XaeroWaypoints*
+/shaderpacks
+/debug
+/asm
 /patchouli_data.json
 /ds_private_storage.json
 
@@ -23,9 +26,13 @@
 /usercache.json
 /usernamecache.json
 /emi.json
+servers.dat
+servers.dat_old
+hs_err*
 
 # Pakku
 build/
+/.pakku/shelf
 !.pakku/
 !pakku.jar
 !pakku.json
@@ -90,6 +97,8 @@ build/
 /config/defaultsettings.json
 /config/embeddium-options.json
 /config/xaerominimap.txt
+/config/crash_assistant/modlist.json
+/config/tunnelyrefab.json
 
 # Linux
 *~
@@ -108,13 +117,3 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
-/shaderpacks
-/debug
-/patchouli_data.json
-/patchouli_data.json
-/config/tunnelyrefab.json
-/asm
-servers.dat
-servers.dat_old
-config/crash_assistant/modlist.json
-config/xaerominimap_entities.json
