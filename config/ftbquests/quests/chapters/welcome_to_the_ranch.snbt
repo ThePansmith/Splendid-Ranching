@@ -128,7 +128,7 @@
 							energy: 1000000
 						}
 					}
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 			]
@@ -382,6 +382,7 @@
 				""
 				"&dSlimes&r will eat &eitems&r of it's diet found on the ground, mobs nearby, or &eitems&r placed inside of a &eSlime Feeder&r"
 				""
+				"&8[&r &7Hunger acts like more of a cooldown to eat than an amount to be fed, all foods will fill the entire bar&r &8]&r"
 				""
 				"When &dslimes&f are fed an &eitem&r or mob they eat, "
 				"&nthe following happens:"
@@ -453,9 +454,9 @@
 					type: "checkmark"
 				}
 				{
-					count: 4L
+					count: 10L
 					id: "5CFB92715C6E157A"
-					item: { Count: 4, id: "splendid_slimes:plort" }
+					item: "splendid_slimes:plort"
 					type: "item"
 				}
 			]
@@ -492,7 +493,7 @@
 					type: "checkmark"
 				}
 				{
-					count: 2L
+					count: 4L
 					id: "2161E0FE3D051082"
 					item: "numismatics:cog"
 					type: "item"
@@ -726,7 +727,7 @@
 				"&c&l&nV Decreasing"
 				"- When not fed for a while a &dslime&r will begin starving and happiness will gradually decrease"
 				"- When killed and reduced to a lower size, a &dslimes&r happiness greatly decreases"
-				"- If fed and near 9 or more &dslimes&r of the same breed, happiness will also greatly decrease"
+				"- If fed and near 9 or more &dslimes&r of the same breed, happiness will also greatly decrease, keep them seperate!"
 				""
 				"&l&nVery important info on &dslime&f happiness states:&r &8[&a➡&8]&r"
 				"{@pagebreak}"

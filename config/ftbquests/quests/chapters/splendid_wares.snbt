@@ -1814,6 +1814,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
+			subtitle: "&8[&7 Essential movement tool! &8]"
 			tasks: [{
 				consume_items: true
 				count: 4L
