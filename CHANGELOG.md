@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.2]
+### Changes
+* Much improved slime spawning, only spawn on natural blocks (or in caves)
+* Wares cost adjustments
+* Added torchmaster, dreadlamp can prevent spawning if you wanna live in a cave
+* Fixed hidden quest for rocket pod
+* Added alot more foods to tags for diets
+* Fixed plort sales terminal giving double the currency it should
+* Added more contributor credits!
+* Edit corral pane recipe to be 1:1
+* Add a corral buyable template
+* Fix some tooltips
+* Fixed gelapedia slime quests not completing
+* Added create transmission i liek it
+* Updated splendid slimes
+
 ## [0.1.1]
 ### Changes
 First hotfix for some essential issues and other things
