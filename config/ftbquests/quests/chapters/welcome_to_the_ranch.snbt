@@ -201,7 +201,7 @@
 							mirrowZ: 0b
 							nome: "base_camp"
 							owner: "worn"
-							owner_name: "Deepacat"
+							owner_name: "SSCCOGAC"
 							remaining_uses: 1
 							rotateValue: 0s
 							skipObstructionBlock: 0b
@@ -628,11 +628,18 @@
 			icon: "numismatics:creative_vendor"
 			id: "2FDFFE3208FF3C16"
 			min_width: 300
-			rewards: [{
-				id: "34C937A0301A594C"
-				item: "numismatics:sprocket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1D8E4637405EF104"
+					item: "kubejs:splendid_wares_shop"
+					type: "item"
+				}
+				{
+					id: "35A2B2ECB6B98645"
+					item: "numismatics:sprocket"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Shopping!"
 			tasks: [{

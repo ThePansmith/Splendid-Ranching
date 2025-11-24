@@ -5570,6 +5570,47 @@
             ]
         },
         {
+            "pakku_id": "Z8EOn28fx3gtbSt2",
+            "pakku_links": [
+                "3XmP4xRMaRyCBy4N"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "society-trading"
+            },
+            "name": {
+                "curseforge": "Society Trading"
+            },
+            "id": {
+                "curseforge": "1347329"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "society_trading-0.9.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7221/661/society_trading-0.9.jar",
+                    "id": "7221661",
+                    "parent_id": "1347329",
+                    "hashes": {
+                        "sha1": "ed031a403c223cbe1994c81d6f4ce18c993153bc",
+                        "md5": "eb9bed4a78e93fdba914a56ec1d3a8c8"
+                    },
+                    "required_dependencies": [
+                        "283644"
+                    ],
+                    "size": 105382,
+                    "date_published": "2025-11-14T18:24:48.170Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Q8vadmO9pJ6huVRh",
             "pakku_links": [
                 "edbXrLw2N0mgb3Th"
