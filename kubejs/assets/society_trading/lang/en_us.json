@@ -1,10 +1,14 @@
 {
-	"shop.society_trading.splendid_wares": "Splendid Wares",
-	"shop.society_trading.splendid_wares.description": "lore goes here",
 	"shop.society_trading.slime_ranch": "Slime Ranching",
+	"shop.society_trading.slime_ranch.description": "Equipment and supplies for ranching the squishiest livestock known.",
 	"shop.society_trading.banking": "Banking",
+	"shop.society_trading.banking.description": "Secure services for gaining, trading, and spending glubs.",
 	"shop.society_trading.mining_gadgets": "Mining Gadgets",
+	"shop.society_trading.mining_gadgets.description": "Upgrades for your (actually SCCOGAC's) trusty mining gadget.",
 	"shop.society_trading.travel_aids": "Travel Aids",
+	"shop.society_trading.travel_aids.description": "Backpacks and devices that help make the journey a little less perilous.",
 	"shop.society_trading.building_gadgets": "Building Gadgets",
-	"shop.society_trading.sparky_shop": "Sparky Shop"
+	"shop.society_trading.building_gadgets.description": "Ingenious gadgets crafted to assist builders in their building.",
+	"shop.society_trading.sparky_shop": "Sparky Shop",
+	"shop.society_trading.sparky_shop.description": "Everything electricity, from production to transportation."
 }
