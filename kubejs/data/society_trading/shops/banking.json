@@ -2,7 +2,8 @@
     "shop_id": "banking",
     "name": "shop.society_trading.banking",
     "texture": "kubejs:block/customtextureforthisshopidunno",
-    "block_tag": "splendid_wares:opens_banking",
+    "block_tag": "splendid_ranching:opens_banking",
+    "jei_catalyst": { "item": "numismatics:magenta_card" },
     "trades": [
       {
         "offer": { "item": "mbd2:selling_port", "count": 1 },

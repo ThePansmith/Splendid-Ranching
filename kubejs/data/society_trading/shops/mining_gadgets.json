@@ -2,7 +2,8 @@
     "shop_id": "mining_gadgets",
     "name": "shop.society_trading.mining_gadgets",
     "texture": "kubejs:block/customtextureforthisshopidunno",
-    "block_tag": "splendid_wares:opens_mining_gadgets",
+    "block_tag": "splendid_ranching:opens_mining_gadgets",
+    "jei_catalyst": { "item": "mininggadgets:modificationtable" },
     "trades": [
       {
         "offer": { "item": "mininggadgets:mininggadget_simple", "count": 1 },

@@ -2,7 +2,8 @@
     "shop_id": "sparky_shop",
     "name": "shop.society_trading.sparky_shop",
     "texture": "kubejs:block/customtextureforthisshopidunno",
-    "block_tag": "splendid_wares:opens_sparky_shop",
+    "block_tag": "splendid_ranching:opens_sparky_shop",
+    "jei_catalyst": { "item": "createaddition:copper_spool" },
     "trades": [
       {
         "offer": { "item": "mbd2:splendid_generator", "count": 1 },

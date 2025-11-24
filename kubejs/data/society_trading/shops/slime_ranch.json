@@ -2,7 +2,8 @@
     "shop_id": "slime_ranch",
     "name": "shop.society_trading.slime_ranch",
     "texture": "kubejs:block/customtextureforthisshopidunno",
-    "block_tag": "splendid_wares:opens_slime_ranch",
+    "block_tag": "splendid_ranching:opens_slime_ranch",
+    "jei_catalyst": { "item": "splendid_slimes:slime_vac" },
     "selector_weight": -10,
     "trades": [
       {

@@ -2,7 +2,8 @@
   "shop_id": "travel_aids",
   "name": "shop.society_trading.travel_aids",
   "texture": "kubejs:block/customtextureforthisshopidunno",
-  "block_tag": "splendid_wares:opens_travel_aids",
+  "block_tag": "splendid_ranching:opens_travel_aids",
+  "jei_catalyst": { "item": "sophisticatedbackpacks:backpack" },
   "trades": [
     {
       "offer": { "item": "splendid_slimes:rocket_pod", "count": 32 },

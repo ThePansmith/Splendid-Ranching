@@ -2,7 +2,8 @@
     "shop_id": "building_gadgets",
     "name": "shop.society_trading.building_gadgets",
     "texture": "buildinggadgets2:gadget_building",
-    "block_tag": "splendid_wares:opens_building_gadgets",
+    "block_tag": "splendid_ranching:opens_building_gadgets",
+    "jei_catalyst": { "item": "buildinggadgets2:template" },
     "trades": [
       {
         "offer": { "item": "buildinggadgets2:gadget_building", "count": 1 },
