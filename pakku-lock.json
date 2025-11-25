@@ -583,50 +583,6 @@
             ]
         },
         {
-            "pakku_id": "QA0yYmmgIMTMFpSX",
-            "pakku_links": [
-                "vYRoHak5bniIVXsH"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "biome-spawn-point"
-            },
-            "name": {
-                "curseforge": "Biome Spawn Point"
-            },
-            "id": {
-                "curseforge": "695238"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "biomespawnpoint-1.20.1-2.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge",
-                        "forge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6186/418/biomespawnpoint-1.20.1-2.4.jar",
-                    "id": "6186418",
-                    "parent_id": "695238",
-                    "hashes": {
-                        "sha1": "e30f052405e32f3fe7eac3b9966f35dfce302370",
-                        "md5": "75674852f70b0070273f2837fa10e5a2"
-                    },
-                    "required_dependencies": [
-                        "342584"
-                    ],
-                    "size": 36749,
-                    "date_published": "2025-02-12T18:50:49.400Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "2XeoiF7rC1gNA2Ek",
             "type": "MOD",
             "slug": {
@@ -4418,6 +4374,42 @@
             ]
         },
         {
+            "pakku_id": "7uyOFwpenIK7FtZ2",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mos-double-jump"
+            },
+            "name": {
+                "curseforge": "Mo's Double Jump"
+            },
+            "id": {
+                "curseforge": "1147726"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "doublejump-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5937/376/doublejump-1.0.0.jar",
+                    "id": "5937376",
+                    "parent_id": "1147726",
+                    "hashes": {
+                        "sha1": "87a1878bb4bc870279d5004d6f50743a1e24fb8e",
+                        "md5": "d6699e8904102ea4e9e7c21ee8c370e0"
+                    },
+                    "required_dependencies": [],
+                    "size": 7239,
+                    "date_published": "2024-11-25T21:37:20.700Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "J3pfCm2yXNJuW85X",
             "type": "MOD",
             "slug": {
@@ -6032,6 +6024,47 @@
                     "required_dependencies": [],
                     "size": 13903,
                     "date_published": "2023-10-09T11:56:32.443Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "IBJUtkH4F3UMAhem",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "what-durability"
+            },
+            "name": {
+                "curseforge": "What Durability?"
+            },
+            "id": {
+                "curseforge": "981008"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "whatdurability-1.20.1-1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "neoforge",
+                        "forge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5631/870/whatdurability-1.20.1-1.3.jar",
+                    "id": "5631870",
+                    "parent_id": "981008",
+                    "hashes": {
+                        "sha1": "11d8f81ec6401847d02a0c425ff0ead791a35f44",
+                        "md5": "76cad8bbf081b44776642c58e936fcd7"
+                    },
+                    "required_dependencies": [
+                        "342584"
+                    ],
+                    "size": 17117,
+                    "date_published": "2024-08-15T14:01:51.350Z"
                 }
             ]
         },
