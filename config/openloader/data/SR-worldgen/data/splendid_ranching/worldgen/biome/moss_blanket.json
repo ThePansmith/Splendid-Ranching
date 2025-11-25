@@ -1,6 +1,6 @@
 {
   "carvers": {
-    "air": [ ]
+    "air": []
   },
   "downfall": 0.0,
   "effects": {
@@ -26,42 +26,25 @@
   "features": [
     [
       "splendid_ranching:moss_blanket/honey_lake_placed",
-      "splendid_ranching:moss_blanket/myonite_spike_placed"
+      "splendid_ranching:moss_blanket/melon_placed",
+      "splendid_ranching:moss_blanket/pumpkin_placed",
+      "splendid_ranching:moss_blanket/mushroom_shelf_placed"      
     ],
-    [ ],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [ ],
-    [ ],
-    [ ],
-    [ ],
-    [ ],
-    [ ],
-    [
-      "minecraft:flower_flower_forest",
-      "minecraft:flower_swamp",
-      "minecraft:flower_swamp",
-      "minecraft:flower_meadow",
-      "minecraft:forest_flowers",
-      "minecraft:glow_lichen",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_tree",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:spore_blossom",
-      "minecraft:patch_melon",
-      "minecraft:classic_vines_cave_feature"
-    ]
+    [],
+    ["minecraft:amethyst_geode"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
   ],
   "has_precipitation": false,
-  "spawn_costs": { },
+  "spawn_costs": {},
   "spawners": {
-    "ambient": [ ],
-    "axolotls": [ ],
+    "ambient": [],
+    "axolotls": [],
     "creature": [
       {
         "type": "minecraft:sheep",
@@ -75,16 +58,16 @@
         "minCount": 4,
         "weight": 2
       },
-			{
-				"type": "splendid_slimes:splendid_slime",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 10
-			}
+      {
+        "type": "splendid_slimes:splendid_slime",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 10
+      }
     ],
-    "misc": [ ],
-    "monster": [ ],
-    "underground_water_creature": [ ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
     "water_ambient": [
       {
         "type": "minecraft:salmon",
@@ -99,7 +82,7 @@
         "weight": 5
       }
     ],
-    "water_creature": [ ]
+    "water_creature": []
   },
   "temperature": 0.8
 }
