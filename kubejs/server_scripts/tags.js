@@ -100,6 +100,8 @@ ServerEvents.tags('block', e => {
     
     e.add('society_trading:opens_shop_selector', 'kubejs:splendid_wares_shop') // Temp
 
+    e.add('society_trading:opens_shop_selector', 'kubejs:splendid_wares_shop') // Temp
+
     // biome surface blocks for animal spawns
     e.add('minecraft:animals_spawnable_on', [
         'minecraft:grass_block', 'minecraft:pink_terracotta', // dry reef

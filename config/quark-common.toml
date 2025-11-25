@@ -631,9 +631,9 @@
 
 	[tweaks.hoe_harvesting]
 		#Allowed values: [1,5]
-		"Regular Hoe Radius" = 2
+		"Regular Hoe Radius" = 3
 		#Allowed values: [1,5]
-		"High Tier Hoe Radius" = 3
+		"High Tier Hoe Radius" = 5
 
 	[tweaks.improved_sponges]
 		#The maximum number of water tiles that a sponge can soak up. Vanilla default is 64.

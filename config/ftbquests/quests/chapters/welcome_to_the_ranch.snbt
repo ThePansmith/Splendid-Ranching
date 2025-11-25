@@ -454,7 +454,7 @@
 					type: "checkmark"
 				}
 				{
-					count: 10L
+					count: 5L
 					id: "5CFB92715C6E157A"
 					item: "splendid_slimes:plort"
 					type: "item"
@@ -479,26 +479,18 @@
 			id: "3A30D0E70BEA4946"
 			min_width: 300
 			rewards: [{
-				count: 16
+				count: 32
 				id: "25E0880387928BEF"
 				item: "splendid_slimes:corral_block"
 				type: "item"
 			}]
 			shape: "rsquare"
 			subtitle: "Cha-ching!"
-			tasks: [
-				{
-					id: "157C41866305863C"
-					title: "Sales Time!"
-					type: "checkmark"
-				}
-				{
-					count: 4L
-					id: "2161E0FE3D051082"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "157C41866305863C"
+				title: "Sales Time!"
+				type: "checkmark"
+			}]
 			title: "&fSelling &ePlorts"
 			x: -2.0d
 			y: 2.0d
@@ -536,10 +528,22 @@
 			]
 			shape: "hexagon"
 			subtitle: "Welcome back frogport"
-			tasks: [{
-				id: "6541908E77ABDAD1"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6541908E77ABDAD1"
+					type: "checkmark"
+				}
+				{
+					count: 8L
+					id: "3D20D2C42C7B0927"
+					item: {
+						Count: 1
+						id: "splendid_slimes:plort"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Resource Harvesting"
 			x: -3.5d
 			y: 4.0d
@@ -602,10 +606,21 @@
 			]
 			shape: "hexagon"
 			subtitle: "It's aliiiiive!"
-			tasks: [{
-				id: "6F21C73EDC043EC4"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6F21C73EDC043EC4"
+					type: "checkmark"
+				}
+				{
+					id: "676B880A0327C295"
+					item: {
+						Count: 1
+						id: "splendid_slimes:slime_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "&fGrowing &eSlime Hearts"
 			x: -4.5d
 			y: 4.0d
@@ -624,6 +639,7 @@
 				"- Electrical wiring equipment"
 				"- Portable storage"
 				"- Area clearing gadgetry"
+				"- Mobility assisting devices"
 			]
 			hide_dependent_lines: true
 			icon: "numismatics:creative_vendor"
@@ -648,7 +664,7 @@
 				title: "I LOVE CAPITALISM !!!"
 				type: "checkmark"
 			}]
-			title: "&aSplendid Wares"
+			title: "&eSplendid Wares"
 			x: -2.5d
 			y: 4.0d
 		}
@@ -905,11 +921,26 @@
 			shape: "diamond"
 			size: 1.25d
 			subtitle: "Path of the Botanist"
-			tasks: [{
-				id: "129E4003BAD1A743"
-				title: "The nature of the druids calls to me"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "129E4003BAD1A743"
+					title: "The nature of the druids calls to me"
+					type: "checkmark"
+				}
+				{
+					id: "77D23ED25789B7FE"
+					item: {
+						Count: 1
+						id: "splendid_slimes:plort"
+						tag: {
+							plort: {
+								id: "splendid_slimes:lush"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "Elven Magics"
 			x: -5.25d
 			y: 0.75d
@@ -922,11 +953,26 @@
 			shape: "diamond"
 			size: 1.25d
 			subtitle: "Path of the Mechanist"
-			tasks: [{
-				id: "7ABC9EB5BCA6C006"
-				title: "The path of mechanical machinations is the way!"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7ABC9EB5BCA6C006"
+					title: "The path of mechanical machinations is the way!"
+					type: "checkmark"
+				}
+				{
+					id: "2C34DD2F9143ADA9"
+					item: {
+						Count: 1
+						id: "splendid_slimes:plort"
+						tag: {
+							plort: {
+								id: "splendid_slimes:stony"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "Mechanical Machinations"
 			x: -6.75d
 			y: 0.75d
@@ -944,11 +990,26 @@
 			shape: "diamond"
 			size: 1.25d
 			subtitle: "Path of the Scientist"
-			tasks: [{
-				id: "109898E1B0AB47CF"
-				title: "I am a computer scientist!"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "109898E1B0AB47CF"
+					title: "I am a computer scientist!"
+					type: "checkmark"
+				}
+				{
+					id: "435C7E4F93C49A17"
+					item: {
+						Count: 1
+						id: "splendid_slimes:plort"
+						tag: {
+							plort: {
+								id: "splendid_slimes:bitwise"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "Redstone Engineering"
 			x: -6.0d
 			y: 0.0d
@@ -1051,11 +1112,23 @@
 			}]
 			shape: "hexagon"
 			subtitle: "Eureka!"
-			tasks: [{
-				id: "70D917DACD6BBCE0"
-				title: "Knowledge is power!"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "70D917DACD6BBCE0"
+					title: "Knowledge is power!"
+					type: "checkmark"
+				}
+				{
+					count: 16L
+					id: "760AAEF7A16DEC88"
+					item: {
+						Count: 1
+						id: "splendid_slimes:plort"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "&b The Lab"
 			x: -6.0d
 			y: 4.0d

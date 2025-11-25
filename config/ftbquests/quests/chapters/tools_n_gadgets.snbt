@@ -171,7 +171,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["641BB69F5A27AABE"]
@@ -340,10 +340,11 @@
 			y: -0.5d
 		}
 		{
-			id: "5144F02153A79ED6"
+			dependencies: ["641BB69F5A27AABE"]
+			id: "17806C9B83FF6179"
 			tasks: [
 				{
-					id: "05EDB3C41CBA80ED"
+					id: "5A60AD54543C466E"
 					item: {
 						Count: 1
 						id: "constructionwand:stone_wand"
@@ -355,7 +356,7 @@
 					type: "item"
 				}
 				{
-					id: "56212BD1D24500CD"
+					id: "684C553DE888C7E9"
 					item: {
 						Count: 1
 						id: "constructionwand:iron_wand"
@@ -367,7 +368,7 @@
 					type: "item"
 				}
 				{
-					id: "351E6579A9D8329E"
+					id: "02D3FC33C7FF1E62"
 					item: {
 						Count: 1
 						id: "constructionwand:diamond_wand"
@@ -378,9 +379,31 @@
 					}
 					type: "item"
 				}
+				{
+					id: "28E0A95753A699A4"
+					item: {
+						Count: 1
+						id: "constructionwand:infinity_wand"
+						tag: {
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
 			]
 			x: 2.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["641BB69F5A27AABE"]
+			id: "74F38EFE74B5C788"
+			tasks: [{
+				id: "5FE5A55BC1E440E3"
+				item: "splendid_slimes:rocket_pod"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 	title: "&9 Tools n' Gadgets"
